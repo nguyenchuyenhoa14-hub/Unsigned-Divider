@@ -1,0 +1,1715 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "/usr/lib64/ivl/system.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib64/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib64/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib64/ivl/va_math.vpi";
+:vpi_module "/usr/lib64/ivl/v2009.vpi";
+S_0xaaab6589ea60 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_0xaaab6587bc90 .scope module, "divider_unsigned" "divider_unsigned" 3 4;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_dividend";
+    .port_info 1 /INPUT 32 "i_divisor";
+    .port_info 2 /OUTPUT 32 "o_quotient";
+    .port_info 3 /OUTPUT 32 "o_remainder";
+o0xffff596c56a8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+L_0xaaab658f5b20 .functor BUFZ 32, o0xffff596c56a8, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+L_0xaaab658f5c20 .functor BUFZ 32, L_0xaaab658f5a80, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+L_0xaaab658f5c90 .functor BUFZ 32, L_0xaaab658f51f0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658c9660 .array "div_wire", 32 0;
+v0xaaab658c9660_0 .net v0xaaab658c9660 0, 31 0, L_0xaaab658f5b20; 1 drivers
+v0xaaab658c9660_1 .net v0xaaab658c9660 1, 31 0, L_0xaaab658cbb40; 1 drivers
+v0xaaab658c9660_2 .net v0xaaab658c9660 2, 31 0, L_0xaaab658dc680; 1 drivers
+v0xaaab658c9660_3 .net v0xaaab658c9660 3, 31 0, L_0xaaab658dd2e0; 1 drivers
+v0xaaab658c9660_4 .net v0xaaab658c9660 4, 31 0, L_0xaaab658ddf30; 1 drivers
+v0xaaab658c9660_5 .net v0xaaab658c9660 5, 31 0, L_0xaaab658dec20; 1 drivers
+v0xaaab658c9660_6 .net v0xaaab658c9660 6, 31 0, L_0xaaab658df910; 1 drivers
+v0xaaab658c9660_7 .net v0xaaab658c9660 7, 31 0, L_0xaaab658e0680; 1 drivers
+v0xaaab658c9660_8 .net v0xaaab658c9660 8, 31 0, L_0xaaab658e1370; 1 drivers
+v0xaaab658c9660_9 .net v0xaaab658c9660 9, 31 0, L_0xaaab658e2060; 1 drivers
+v0xaaab658c9660_10 .net v0xaaab658c9660 10, 31 0, L_0xaaab658e2d50; 1 drivers
+v0xaaab658c9660_11 .net v0xaaab658c9660 11, 31 0, L_0xaaab658e3a40; 1 drivers
+v0xaaab658c9660_12 .net v0xaaab658c9660 12, 31 0, L_0xaaab658e4730; 1 drivers
+v0xaaab658c9660_13 .net v0xaaab658c9660 13, 31 0, L_0xaaab658e5420; 1 drivers
+v0xaaab658c9660_14 .net v0xaaab658c9660 14, 31 0, L_0xaaab658e6110; 1 drivers
+v0xaaab658c9660_15 .net v0xaaab658c9660 15, 31 0, L_0xaaab658e6e00; 1 drivers
+v0xaaab658c9660_16 .net v0xaaab658c9660 16, 31 0, L_0xaaab658e8300; 1 drivers
+v0xaaab658c9660_17 .net v0xaaab658c9660 17, 31 0, L_0xaaab658e8ff0; 1 drivers
+v0xaaab658c9660_18 .net v0xaaab658c9660 18, 31 0, L_0xaaab658e9ce0; 1 drivers
+v0xaaab658c9660_19 .net v0xaaab658c9660 19, 31 0, L_0xaaab658ea9d0; 1 drivers
+v0xaaab658c9660_20 .net v0xaaab658c9660 20, 31 0, L_0xaaab658eb6c0; 1 drivers
+v0xaaab658c9660_21 .net v0xaaab658c9660 21, 31 0, L_0xaaab658ec3b0; 1 drivers
+v0xaaab658c9660_22 .net v0xaaab658c9660 22, 31 0, L_0xaaab658ed0a0; 1 drivers
+v0xaaab658c9660_23 .net v0xaaab658c9660 23, 31 0, L_0xaaab658edd90; 1 drivers
+v0xaaab658c9660_24 .net v0xaaab658c9660 24, 31 0, L_0xaaab658eea80; 1 drivers
+v0xaaab658c9660_25 .net v0xaaab658c9660 25, 31 0, L_0xaaab658ef770; 1 drivers
+v0xaaab658c9660_26 .net v0xaaab658c9660 26, 31 0, L_0xaaab658f0490; 1 drivers
+v0xaaab658c9660_27 .net v0xaaab658c9660 27, 31 0, L_0xaaab658f11b0; 1 drivers
+v0xaaab658c9660_28 .net v0xaaab658c9660 28, 31 0, L_0xaaab658f1ed0; 1 drivers
+v0xaaab658c9660_29 .net v0xaaab658c9660 29, 31 0, L_0xaaab658f2c20; 1 drivers
+v0xaaab658c9660_30 .net v0xaaab658c9660 30, 31 0, L_0xaaab658f3970; 1 drivers
+v0xaaab658c9660_31 .net v0xaaab658c9660 31, 31 0, L_0xaaab658f46c0; 1 drivers
+v0xaaab658c9660_32 .net v0xaaab658c9660 32, 31 0, L_0xaaab658f5460; 1 drivers
+v0xaaab658ca1e0_0 .net "i_dividend", 31 0, o0xffff596c56a8;  0 drivers
+o0xffff596bc228 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658ca280_0 .net "i_divisor", 31 0, o0xffff596bc228;  0 drivers
+v0xaaab658ca730_0 .net "o_quotient", 31 0, L_0xaaab658f5c20;  1 drivers
+v0xaaab658ca7d0_0 .net "o_remainder", 31 0, L_0xaaab658f5c90;  1 drivers
+v0xaaab658ca8c0_0 .net "quo_bits", 31 0, L_0xaaab658f5a80;  1 drivers
+L_0xffff59671b18 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658ca960 .array "rem_wire", 32 0;
+v0xaaab658ca960_0 .net v0xaaab658ca960 0, 31 0, L_0xffff59671b18; 1 drivers
+v0xaaab658ca960_1 .net v0xaaab658ca960 1, 31 0, L_0xaaab658cb970; 1 drivers
+v0xaaab658ca960_2 .net v0xaaab658ca960 2, 31 0, L_0xaaab658dc420; 1 drivers
+v0xaaab658ca960_3 .net v0xaaab658ca960 3, 31 0, L_0xaaab658dd0c0; 1 drivers
+v0xaaab658ca960_4 .net v0xaaab658ca960 4, 31 0, L_0xaaab658ddd10; 1 drivers
+v0xaaab658ca960_5 .net v0xaaab658ca960 5, 31 0, L_0xaaab658dea00; 1 drivers
+v0xaaab658ca960_6 .net v0xaaab658ca960 6, 31 0, L_0xaaab658df6f0; 1 drivers
+v0xaaab658ca960_7 .net v0xaaab658ca960 7, 31 0, L_0xaaab658e0460; 1 drivers
+v0xaaab658ca960_8 .net v0xaaab658ca960 8, 31 0, L_0xaaab658e1150; 1 drivers
+v0xaaab658ca960_9 .net v0xaaab658ca960 9, 31 0, L_0xaaab658e1e40; 1 drivers
+v0xaaab658ca960_10 .net v0xaaab658ca960 10, 31 0, L_0xaaab658e2b30; 1 drivers
+v0xaaab658ca960_11 .net v0xaaab658ca960 11, 31 0, L_0xaaab658e3820; 1 drivers
+v0xaaab658ca960_12 .net v0xaaab658ca960 12, 31 0, L_0xaaab658e4510; 1 drivers
+v0xaaab658ca960_13 .net v0xaaab658ca960 13, 31 0, L_0xaaab658e5200; 1 drivers
+v0xaaab658ca960_14 .net v0xaaab658ca960 14, 31 0, L_0xaaab658e5ef0; 1 drivers
+v0xaaab658ca960_15 .net v0xaaab658ca960 15, 31 0, L_0xaaab658e6be0; 1 drivers
+v0xaaab658ca960_16 .net v0xaaab658ca960 16, 31 0, L_0xaaab658e80e0; 1 drivers
+v0xaaab658ca960_17 .net v0xaaab658ca960 17, 31 0, L_0xaaab658e8dd0; 1 drivers
+v0xaaab658ca960_18 .net v0xaaab658ca960 18, 31 0, L_0xaaab658e9ac0; 1 drivers
+v0xaaab658ca960_19 .net v0xaaab658ca960 19, 31 0, L_0xaaab658ea7b0; 1 drivers
+v0xaaab658ca960_20 .net v0xaaab658ca960 20, 31 0, L_0xaaab658eb4a0; 1 drivers
+v0xaaab658ca960_21 .net v0xaaab658ca960 21, 31 0, L_0xaaab658ec190; 1 drivers
+v0xaaab658ca960_22 .net v0xaaab658ca960 22, 31 0, L_0xaaab658ece80; 1 drivers
+v0xaaab658ca960_23 .net v0xaaab658ca960 23, 31 0, L_0xaaab658edb70; 1 drivers
+v0xaaab658ca960_24 .net v0xaaab658ca960 24, 31 0, L_0xaaab658ee860; 1 drivers
+v0xaaab658ca960_25 .net v0xaaab658ca960 25, 31 0, L_0xaaab658ef550; 1 drivers
+v0xaaab658ca960_26 .net v0xaaab658ca960 26, 31 0, L_0xaaab658f0270; 1 drivers
+v0xaaab658ca960_27 .net v0xaaab658ca960 27, 31 0, L_0xaaab658f0f90; 1 drivers
+v0xaaab658ca960_28 .net v0xaaab658ca960 28, 31 0, L_0xaaab658f1cb0; 1 drivers
+v0xaaab658ca960_29 .net v0xaaab658ca960 29, 31 0, L_0xaaab658f2a00; 1 drivers
+v0xaaab658ca960_30 .net v0xaaab658ca960 30, 31 0, L_0xaaab658f3750; 1 drivers
+v0xaaab658ca960_31 .net v0xaaab658ca960 31, 31 0, L_0xaaab658f44a0; 1 drivers
+v0xaaab658ca960_32 .net v0xaaab658ca960 32, 31 0, L_0xaaab658f51f0; 1 drivers
+LS_0xaaab658f5a80_0_0 .concat8 [ 1 1 1 1], L_0xaaab658f5180, L_0xaaab658f4430, L_0xaaab658f36e0, L_0xaaab658f2990;
+LS_0xaaab658f5a80_0_4 .concat8 [ 1 1 1 1], L_0xaaab658f1c40, L_0xaaab658f0f20, L_0xaaab658f0200, L_0xaaab658ef4e0;
+LS_0xaaab658f5a80_0_8 .concat8 [ 1 1 1 1], L_0xaaab658ee7f0, L_0xaaab658edb00, L_0xaaab658ece10, L_0xaaab658ec120;
+LS_0xaaab658f5a80_0_12 .concat8 [ 1 1 1 1], L_0xaaab658eb430, L_0xaaab658ea740, L_0xaaab658e9a50, L_0xaaab658e8d60;
+LS_0xaaab658f5a80_0_16 .concat8 [ 1 1 1 1], L_0xaaab658e7860, L_0xaaab658e6b70, L_0xaaab658e5e80, L_0xaaab658e5190;
+LS_0xaaab658f5a80_0_20 .concat8 [ 1 1 1 1], L_0xaaab658e44a0, L_0xaaab658e37b0, L_0xaaab658e2ac0, L_0xaaab658e1dd0;
+LS_0xaaab658f5a80_0_24 .concat8 [ 1 1 1 1], L_0xaaab658e10e0, L_0xaaab658e03f0, L_0xaaab658df680, L_0xaaab658de990;
+LS_0xaaab658f5a80_0_28 .concat8 [ 1 1 1 1], L_0xaaab658a0fe0, L_0xaaab65897080, L_0xaaab6588d120, L_0xaaab658831c0;
+LS_0xaaab658f5a80_1_0 .concat8 [ 4 4 4 4], LS_0xaaab658f5a80_0_0, LS_0xaaab658f5a80_0_4, LS_0xaaab658f5a80_0_8, LS_0xaaab658f5a80_0_12;
+LS_0xaaab658f5a80_1_4 .concat8 [ 4 4 4 4], LS_0xaaab658f5a80_0_16, LS_0xaaab658f5a80_0_20, LS_0xaaab658f5a80_0_24, LS_0xaaab658f5a80_0_28;
+L_0xaaab658f5a80 .concat8 [ 16 16 0 0], LS_0xaaab658f5a80_1_0, LS_0xaaab658f5a80_1_4;
+S_0xaaab65880c40 .scope generate, "stage[0]" "stage[0]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab65806fb0 .param/l "i" 1 3 26, +C4<00>;
+S_0xaaab65885bf0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab65880c40;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658831c0 .functor BUFZ 1, L_0xaaab658cb7e0, C4<0>, C4<0>, C4<0>;
+L_0xaaab65888170 .functor OR 32, L_0xaaab658cbd70, L_0xaaab658cbf10, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab65888ce0_0 .net *"_ivl_1", 30 0, L_0xaaab658cb4c0;  1 drivers
+v0xaaab6588dc90_0 .net *"_ivl_16", 30 0, L_0xaaab658cbaa0;  1 drivers
+L_0xffff59670018 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab65892c40_0 .net *"_ivl_18", 0 0, L_0xffff59670018;  1 drivers
+v0xaaab65897bf0_0 .net *"_ivl_20", 31 0, L_0xaaab658cbd70;  1 drivers
+v0xaaab6589cba0_0 .net *"_ivl_22", 30 0, L_0xaaab658cbcd0;  1 drivers
+L_0xffff59670060 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a1b60_0 .net *"_ivl_24", 0 0, L_0xffff59670060;  1 drivers
+v0xaaab6584f490_0 .net *"_ivl_26", 31 0, L_0xaaab658cbf10;  1 drivers
+L_0xffff596700a8 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab6584f550_0 .net *"_ivl_29", 30 0, L_0xffff596700a8;  1 drivers
+v0xaaab6584c9c0_0 .net *"_ivl_3", 0 0, L_0xaaab658cb5b0;  1 drivers
+v0xaaab65848e20_0 .net "can_subtract", 0 0, L_0xaaab658cb7e0;  1 drivers
+v0xaaab65848ee0_0 .net "i_dividend", 31 0, L_0xaaab658f5b20;  alias, 1 drivers
+v0xaaab6584c010_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596bc258 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab6584c0d0_0 .net "i_quotient", 31 0, o0xffff596bc258;  0 drivers
+v0xaaab6584a4e0_0 .net "i_remainder", 31 0, L_0xffff59671b18;  alias, 1 drivers
+v0xaaab6584a5c0_0 .net "new_remainder", 31 0, L_0xaaab658cb6a0;  1 drivers
+v0xaaab65847a30_0 .net "o_dividend", 31 0, L_0xaaab658cbb40;  alias, 1 drivers
+v0xaaab65847b10_0 .net "o_quotient", 31 0, L_0xaaab65888170;  1 drivers
+v0xaaab65843eb0_0 .net "o_quotient_bit", 0 0, L_0xaaab658831c0;  1 drivers
+v0xaaab65843f70_0 .net "o_remainder", 31 0, L_0xaaab658cb970;  alias, 1 drivers
+v0xaaab658470a0_0 .net "subtracted_remainder", 31 0, L_0xaaab658cb8d0;  1 drivers
+L_0xaaab658cb4c0 .part L_0xffff59671b18, 0, 31;
+L_0xaaab658cb5b0 .part L_0xaaab658f5b20, 31, 1;
+L_0xaaab658cb6a0 .concat [ 1 31 0 0], L_0xaaab658cb5b0, L_0xaaab658cb4c0;
+L_0xaaab658cb7e0 .cmp/ge 32, L_0xaaab658cb6a0, o0xffff596bc228;
+L_0xaaab658cb8d0 .arith/sub 32, L_0xaaab658cb6a0, o0xffff596bc228;
+L_0xaaab658cb970 .functor MUXZ 32, L_0xaaab658cb6a0, L_0xaaab658cb8d0, L_0xaaab658cb7e0, C4<>;
+L_0xaaab658cbaa0 .part L_0xaaab658f5b20, 0, 31;
+L_0xaaab658cbb40 .concat [ 1 31 0 0], L_0xffff59670018, L_0xaaab658cbaa0;
+L_0xaaab658cbcd0 .part o0xffff596bc258, 0, 31;
+L_0xaaab658cbd70 .concat [ 1 31 0 0], L_0xffff59670060, L_0xaaab658cbcd0;
+L_0xaaab658cbf10 .concat [ 1 31 0 0], L_0xaaab658831c0, L_0xffff596700a8;
+S_0xaaab6588aba0 .scope generate, "stage[1]" "stage[1]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab6583dc70 .param/l "i" 1 3 26, +C4<01>;
+S_0xaaab6588fb50 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab6588aba0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab6588d120 .functor BUFZ 1, L_0xaaab658dc290, C4<0>, C4<0>, C4<0>;
+L_0xaaab658920d0 .functor OR 32, L_0xaaab658dc900, L_0xaaab658dcaa0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab65842b30_0 .net *"_ivl_1", 30 0, L_0xaaab658dc0b0;  1 drivers
+v0xaaab6583eec0_0 .net *"_ivl_16", 30 0, L_0xaaab658dc5e0;  1 drivers
+L_0xffff596700f0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab6583efc0_0 .net *"_ivl_18", 0 0, L_0xffff596700f0;  1 drivers
+v0xaaab658420b0_0 .net *"_ivl_20", 31 0, L_0xaaab658dc900;  1 drivers
+v0xaaab65842190_0 .net *"_ivl_22", 30 0, L_0xaaab658dc810;  1 drivers
+L_0xffff59670138 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658405a0_0 .net *"_ivl_24", 0 0, L_0xffff59670138;  1 drivers
+v0xaaab65840680_0 .net *"_ivl_26", 31 0, L_0xaaab658dcaa0;  1 drivers
+L_0xffff59670180 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab6583daf0_0 .net *"_ivl_29", 30 0, L_0xffff59670180;  1 drivers
+v0xaaab65839f10_0 .net *"_ivl_3", 0 0, L_0xaaab658dc150;  1 drivers
+v0xaaab65839ff0_0 .net "can_subtract", 0 0, L_0xaaab658dc290;  1 drivers
+v0xaaab6583d100_0 .net "i_dividend", 31 0, L_0xaaab658cbb40;  alias, 1 drivers
+v0xaaab6583d1c0_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596bc738 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab6583b5d0_0 .net "i_quotient", 31 0, o0xffff596bc738;  0 drivers
+v0xaaab6583b690_0 .net "i_remainder", 31 0, L_0xaaab658cb970;  alias, 1 drivers
+v0xaaab65838b00_0 .net "new_remainder", 31 0, L_0xaaab658dc1f0;  1 drivers
+v0xaaab65838ba0_0 .net "o_dividend", 31 0, L_0xaaab658dc680;  alias, 1 drivers
+v0xaaab65834f60_0 .net "o_quotient", 31 0, L_0xaaab658920d0;  1 drivers
+v0xaaab65835000_0 .net "o_quotient_bit", 0 0, L_0xaaab6588d120;  1 drivers
+v0xaaab65836620_0 .net "o_remainder", 31 0, L_0xaaab658dc420;  alias, 1 drivers
+v0xaaab65836700_0 .net "subtracted_remainder", 31 0, L_0xaaab658dc380;  1 drivers
+L_0xaaab658dc0b0 .part L_0xaaab658cb970, 0, 31;
+L_0xaaab658dc150 .part L_0xaaab658cbb40, 31, 1;
+L_0xaaab658dc1f0 .concat [ 1 31 0 0], L_0xaaab658dc150, L_0xaaab658dc0b0;
+L_0xaaab658dc290 .cmp/ge 32, L_0xaaab658dc1f0, o0xffff596bc228;
+L_0xaaab658dc380 .arith/sub 32, L_0xaaab658dc1f0, o0xffff596bc228;
+L_0xaaab658dc420 .functor MUXZ 32, L_0xaaab658dc1f0, L_0xaaab658dc380, L_0xaaab658dc290, C4<>;
+L_0xaaab658dc5e0 .part L_0xaaab658cbb40, 0, 31;
+L_0xaaab658dc680 .concat [ 1 31 0 0], L_0xffff596700f0, L_0xaaab658dc5e0;
+L_0xaaab658dc810 .part o0xffff596bc738, 0, 31;
+L_0xaaab658dc900 .concat [ 1 31 0 0], L_0xffff59670138, L_0xaaab658dc810;
+L_0xaaab658dcaa0 .concat [ 1 31 0 0], L_0xaaab6588d120, L_0xffff59670180;
+S_0xaaab65894b00 .scope generate, "stage[2]" "stage[2]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab65833b70 .param/l "i" 1 3 26, +C4<010>;
+S_0xaaab65899ab0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab65894b00;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab65897080 .functor BUFZ 1, L_0xaaab658dcf30, C4<0>, C4<0>, C4<0>;
+L_0xaaab6589c030 .functor OR 32, L_0xaaab658dd510, L_0xaaab658dd6b0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab65830080_0 .net *"_ivl_1", 30 0, L_0xaaab658dcc30;  1 drivers
+v0xaaab658331c0_0 .net *"_ivl_16", 30 0, L_0xaaab658dd240;  1 drivers
+L_0xffff596701c8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658332a0_0 .net *"_ivl_18", 0 0, L_0xffff596701c8;  1 drivers
+v0xaaab65831690_0 .net *"_ivl_20", 31 0, L_0xaaab658dd510;  1 drivers
+v0xaaab65831770_0 .net *"_ivl_22", 30 0, L_0xaaab658dd470;  1 drivers
+L_0xffff59670210 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab6582ec30_0 .net *"_ivl_24", 0 0, L_0xffff59670210;  1 drivers
+v0xaaab6582b000_0 .net *"_ivl_26", 31 0, L_0xaaab658dd6b0;  1 drivers
+L_0xffff59670258 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab6582b0e0_0 .net *"_ivl_29", 30 0, L_0xffff59670258;  1 drivers
+v0xaaab6582e1f0_0 .net *"_ivl_3", 0 0, L_0xaaab658dcd60;  1 drivers
+v0xaaab6582e2d0_0 .net "can_subtract", 0 0, L_0xaaab658dcf30;  1 drivers
+v0xaaab6582c6c0_0 .net "i_dividend", 31 0, L_0xaaab658dc680;  alias, 1 drivers
+v0xaaab6582c780_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596bcbe8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab65829bf0_0 .net "i_quotient", 31 0, o0xffff596bcbe8;  0 drivers
+v0xaaab65829cd0_0 .net "i_remainder", 31 0, L_0xaaab658dc420;  alias, 1 drivers
+v0xaaab65826050_0 .net "new_remainder", 31 0, L_0xaaab658dce90;  1 drivers
+v0xaaab65826110_0 .net "o_dividend", 31 0, L_0xaaab658dd2e0;  alias, 1 drivers
+v0xaaab65829240_0 .net "o_quotient", 31 0, L_0xaaab6589c030;  1 drivers
+v0xaaab658292e0_0 .net "o_quotient_bit", 0 0, L_0xaaab65897080;  1 drivers
+v0xaaab65824c40_0 .net "o_remainder", 31 0, L_0xaaab658dd0c0;  alias, 1 drivers
+v0xaaab65824d20_0 .net "subtracted_remainder", 31 0, L_0xaaab658dd020;  1 drivers
+L_0xaaab658dcc30 .part L_0xaaab658dc420, 0, 31;
+L_0xaaab658dcd60 .part L_0xaaab658dc680, 31, 1;
+L_0xaaab658dce90 .concat [ 1 31 0 0], L_0xaaab658dcd60, L_0xaaab658dcc30;
+L_0xaaab658dcf30 .cmp/ge 32, L_0xaaab658dce90, o0xffff596bc228;
+L_0xaaab658dd020 .arith/sub 32, L_0xaaab658dce90, o0xffff596bc228;
+L_0xaaab658dd0c0 .functor MUXZ 32, L_0xaaab658dce90, L_0xaaab658dd020, L_0xaaab658dcf30, C4<>;
+L_0xaaab658dd240 .part L_0xaaab658dc680, 0, 31;
+L_0xaaab658dd2e0 .concat [ 1 31 0 0], L_0xffff596701c8, L_0xaaab658dd240;
+L_0xaaab658dd470 .part o0xffff596bcbe8, 0, 31;
+L_0xaaab658dd510 .concat [ 1 31 0 0], L_0xffff59670210, L_0xaaab658dd470;
+L_0xaaab658dd6b0 .concat [ 1 31 0 0], L_0xaaab65897080, L_0xffff59670258;
+S_0xaaab65824290 .scope generate, "stage[3]" "stage[3]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab65821160 .param/l "i" 1 3 26, +C4<011>;
+S_0xaaab65822760 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab65824290;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658a0fe0 .functor BUFZ 1, L_0xaaab658ddb80, C4<0>, C4<0>, C4<0>;
+L_0xaaab658de3f0 .functor OR 32, L_0xaaab658de160, L_0xaaab658de300, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab6581c0f0_0 .net *"_ivl_1", 30 0, L_0xaaab658dd880;  1 drivers
+v0xaaab6581c1f0_0 .net *"_ivl_16", 30 0, L_0xaaab658dde90;  1 drivers
+L_0xffff596702a0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab6581f300_0 .net *"_ivl_18", 0 0, L_0xffff596702a0;  1 drivers
+v0xaaab6581f3e0_0 .net *"_ivl_20", 31 0, L_0xaaab658de160;  1 drivers
+v0xaaab6581d7f0_0 .net *"_ivl_22", 30 0, L_0xaaab658de0c0;  1 drivers
+L_0xffff596702e8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab6581ace0_0 .net *"_ivl_24", 0 0, L_0xffff596702e8;  1 drivers
+v0xaaab6581adc0_0 .net *"_ivl_26", 31 0, L_0xaaab658de300;  1 drivers
+L_0xffff59670330 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab65817140_0 .net *"_ivl_29", 30 0, L_0xffff59670330;  1 drivers
+v0xaaab65817220_0 .net *"_ivl_3", 0 0, L_0xaaab658dd9b0;  1 drivers
+v0xaaab6581a350_0 .net "can_subtract", 0 0, L_0xaaab658ddb80;  1 drivers
+v0xaaab6581a410_0 .net "i_dividend", 31 0, L_0xaaab658dd2e0;  alias, 1 drivers
+v0xaaab65818800_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596bd098 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658188a0_0 .net "i_quotient", 31 0, o0xffff596bd098;  0 drivers
+v0xaaab65815d30_0 .net "i_remainder", 31 0, L_0xaaab658dd0c0;  alias, 1 drivers
+v0xaaab65815dd0_0 .net "new_remainder", 31 0, L_0xaaab658ddae0;  1 drivers
+v0xaaab65812190_0 .net "o_dividend", 31 0, L_0xaaab658ddf30;  alias, 1 drivers
+v0xaaab65812270_0 .net "o_quotient", 31 0, L_0xaaab658de3f0;  1 drivers
+v0xaaab65813850_0 .net "o_quotient_bit", 0 0, L_0xaaab658a0fe0;  1 drivers
+v0xaaab65813910_0 .net "o_remainder", 31 0, L_0xaaab658ddd10;  alias, 1 drivers
+v0xaaab65810d80_0 .net "subtracted_remainder", 31 0, L_0xaaab658ddc70;  1 drivers
+L_0xaaab658dd880 .part L_0xaaab658dd0c0, 0, 31;
+L_0xaaab658dd9b0 .part L_0xaaab658dd2e0, 31, 1;
+L_0xaaab658ddae0 .concat [ 1 31 0 0], L_0xaaab658dd9b0, L_0xaaab658dd880;
+L_0xaaab658ddb80 .cmp/ge 32, L_0xaaab658ddae0, o0xffff596bc228;
+L_0xaaab658ddc70 .arith/sub 32, L_0xaaab658ddae0, o0xffff596bc228;
+L_0xaaab658ddd10 .functor MUXZ 32, L_0xaaab658ddae0, L_0xaaab658ddc70, L_0xaaab658ddb80, C4<>;
+L_0xaaab658dde90 .part L_0xaaab658dd2e0, 0, 31;
+L_0xaaab658ddf30 .concat [ 1 31 0 0], L_0xffff596702a0, L_0xaaab658dde90;
+L_0xaaab658de0c0 .part o0xffff596bd098, 0, 31;
+L_0xaaab658de160 .concat [ 1 31 0 0], L_0xffff596702e8, L_0xaaab658de0c0;
+L_0xaaab658de300 .concat [ 1 31 0 0], L_0xaaab658a0fe0, L_0xffff59670330;
+S_0xaaab6580d1e0 .scope generate, "stage[4]" "stage[4]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658103d0 .param/l "i" 1 3 26, +C4<0100>;
+S_0xaaab6580e8a0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab6580d1e0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658de990 .functor BUFZ 1, L_0xaaab658de800, C4<0>, C4<0>, C4<0>;
+L_0xaaab658df0e0 .functor OR 32, L_0xaaab658dee50, L_0xaaab658deff0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab6580bea0_0 .net *"_ivl_1", 30 0, L_0xaaab658de500;  1 drivers
+v0xaaab65808250_0 .net *"_ivl_16", 30 0, L_0xaaab658deb80;  1 drivers
+L_0xffff59670378 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab65808330_0 .net *"_ivl_18", 0 0, L_0xffff59670378;  1 drivers
+v0xaaab6580b440_0 .net *"_ivl_20", 31 0, L_0xaaab658dee50;  1 drivers
+v0xaaab6580b520_0 .net *"_ivl_22", 30 0, L_0xaaab658dedb0;  1 drivers
+L_0xffff596703c0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab65809980_0 .net *"_ivl_24", 0 0, L_0xffff596703c0;  1 drivers
+v0xaaab6585be70_0 .net *"_ivl_26", 31 0, L_0xaaab658deff0;  1 drivers
+L_0xffff59670408 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab6585bf50_0 .net *"_ivl_29", 30 0, L_0xffff59670408;  1 drivers
+v0xaaab658073b0_0 .net *"_ivl_3", 0 0, L_0xaaab658de630;  1 drivers
+v0xaaab65807490_0 .net "can_subtract", 0 0, L_0xaaab658de800;  1 drivers
+v0xaaab6580c390_0 .net "i_dividend", 31 0, L_0xaaab658ddf30;  alias, 1 drivers
+v0xaaab6580c430_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596bd548 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab65839150_0 .net "i_quotient", 31 0, o0xffff596bd548;  0 drivers
+v0xaaab6589c800_0 .net "i_remainder", 31 0, L_0xaaab658ddd10;  alias, 1 drivers
+v0xaaab6589c8c0_0 .net "new_remainder", 31 0, L_0xaaab658de760;  1 drivers
+v0xaaab65897850_0 .net "o_dividend", 31 0, L_0xaaab658dec20;  alias, 1 drivers
+v0xaaab65897930_0 .net "o_quotient", 31 0, L_0xaaab658df0e0;  1 drivers
+v0xaaab6588d8f0_0 .net "o_quotient_bit", 0 0, L_0xaaab658de990;  1 drivers
+v0xaaab6588d9b0_0 .net "o_remainder", 31 0, L_0xaaab658dea00;  alias, 1 drivers
+v0xaaab65888940_0 .net "subtracted_remainder", 31 0, L_0xaaab658de8f0;  1 drivers
+L_0xaaab658de500 .part L_0xaaab658ddd10, 0, 31;
+L_0xaaab658de630 .part L_0xaaab658ddf30, 31, 1;
+L_0xaaab658de760 .concat [ 1 31 0 0], L_0xaaab658de630, L_0xaaab658de500;
+L_0xaaab658de800 .cmp/ge 32, L_0xaaab658de760, o0xffff596bc228;
+L_0xaaab658de8f0 .arith/sub 32, L_0xaaab658de760, o0xffff596bc228;
+L_0xaaab658dea00 .functor MUXZ 32, L_0xaaab658de760, L_0xaaab658de8f0, L_0xaaab658de800, C4<>;
+L_0xaaab658deb80 .part L_0xaaab658ddf30, 0, 31;
+L_0xaaab658dec20 .concat [ 1 31 0 0], L_0xffff59670378, L_0xaaab658deb80;
+L_0xaaab658dedb0 .part o0xffff596bd548, 0, 31;
+L_0xaaab658dee50 .concat [ 1 31 0 0], L_0xffff596703c0, L_0xaaab658dedb0;
+L_0xaaab658deff0 .concat [ 1 31 0 0], L_0xaaab658de990, L_0xffff59670408;
+S_0xaaab65883990 .scope generate, "stage[5]" "stage[5]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658098f0 .param/l "i" 1 3 26, +C4<0101>;
+S_0xaaab6587e9e0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab65883990;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658df680 .functor BUFZ 1, L_0xaaab658df4f0, C4<0>, C4<0>, C4<0>;
+L_0xaaab658dfee0 .functor OR 32, L_0xaaab658dfc50, L_0xaaab658dfdf0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab65879b00_0 .net *"_ivl_1", 30 0, L_0xaaab658df1f0;  1 drivers
+v0xaaab65874a80_0 .net *"_ivl_16", 30 0, L_0xaaab658df870;  1 drivers
+L_0xffff59670450 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab65874b60_0 .net *"_ivl_18", 0 0, L_0xffff59670450;  1 drivers
+v0xaaab6586fad0_0 .net *"_ivl_20", 31 0, L_0xaaab658dfc50;  1 drivers
+v0xaaab6586fb90_0 .net *"_ivl_22", 30 0, L_0xaaab658dfaa0;  1 drivers
+L_0xffff59670498 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab6586ab20_0 .net *"_ivl_24", 0 0, L_0xffff59670498;  1 drivers
+v0xaaab6586ac00_0 .net *"_ivl_26", 31 0, L_0xaaab658dfdf0;  1 drivers
+L_0xffff596704e0 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab65865b70_0 .net *"_ivl_29", 30 0, L_0xffff596704e0;  1 drivers
+v0xaaab65865c50_0 .net *"_ivl_3", 0 0, L_0xaaab658df320;  1 drivers
+v0xaaab65860bc0_0 .net "can_subtract", 0 0, L_0xaaab658df4f0;  1 drivers
+v0xaaab65860c80_0 .net "i_dividend", 31 0, L_0xaaab658dec20;  alias, 1 drivers
+v0xaaab6585bc10_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596bd9f8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab6585bcb0_0 .net "i_quotient", 31 0, o0xffff596bd9f8;  0 drivers
+v0xaaab65856c60_0 .net "i_remainder", 31 0, L_0xaaab658dea00;  alias, 1 drivers
+v0xaaab65856d20_0 .net "new_remainder", 31 0, L_0xaaab658df450;  1 drivers
+v0xaaab65874ce0_0 .net "o_dividend", 31 0, L_0xaaab658df910;  alias, 1 drivers
+v0xaaab65874dc0_0 .net "o_quotient", 31 0, L_0xaaab658dfee0;  1 drivers
+v0xaaab65806ee0_0 .net "o_quotient_bit", 0 0, L_0xaaab658df680;  1 drivers
+v0xaaab65856920_0 .net "o_remainder", 31 0, L_0xaaab658df6f0;  alias, 1 drivers
+v0xaaab658569e0_0 .net "subtracted_remainder", 31 0, L_0xaaab658df5e0;  1 drivers
+L_0xaaab658df1f0 .part L_0xaaab658dea00, 0, 31;
+L_0xaaab658df320 .part L_0xaaab658dec20, 31, 1;
+L_0xaaab658df450 .concat [ 1 31 0 0], L_0xaaab658df320, L_0xaaab658df1f0;
+L_0xaaab658df4f0 .cmp/ge 32, L_0xaaab658df450, o0xffff596bc228;
+L_0xaaab658df5e0 .arith/sub 32, L_0xaaab658df450, o0xffff596bc228;
+L_0xaaab658df6f0 .functor MUXZ 32, L_0xaaab658df450, L_0xaaab658df5e0, L_0xaaab658df4f0, C4<>;
+L_0xaaab658df870 .part L_0xaaab658dec20, 0, 31;
+L_0xaaab658df910 .concat [ 1 31 0 0], L_0xffff59670450, L_0xaaab658df870;
+L_0xaaab658dfaa0 .part o0xffff596bd9f8, 0, 31;
+L_0xaaab658dfc50 .concat [ 1 31 0 0], L_0xffff59670498, L_0xaaab658dfaa0;
+L_0xaaab658dfdf0 .concat [ 1 31 0 0], L_0xaaab658df680, L_0xffff596704e0;
+S_0xaaab6585b8d0 .scope generate, "stage[6]" "stage[6]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab6585ba80 .param/l "i" 1 3 26, +C4<0110>;
+S_0xaaab65860880 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab6585b8d0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e03f0 .functor BUFZ 1, L_0xaaab658e0260, C4<0>, C4<0>, C4<0>;
+L_0xaaab658e0b40 .functor OR 32, L_0xaaab658e08b0, L_0xaaab658e0a50, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab65865900_0 .net *"_ivl_1", 30 0, L_0xaaab658dfff0;  1 drivers
+v0xaaab658659e0_0 .net *"_ivl_16", 30 0, L_0xaaab658e05e0;  1 drivers
+L_0xffff59670528 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab6586a820_0 .net *"_ivl_18", 0 0, L_0xffff59670528;  1 drivers
+v0xaaab6586a910_0 .net *"_ivl_20", 31 0, L_0xaaab658e08b0;  1 drivers
+v0xaaab6586f790_0 .net *"_ivl_22", 30 0, L_0xaaab658e0810;  1 drivers
+L_0xffff59670570 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab6586f8c0_0 .net *"_ivl_24", 0 0, L_0xffff59670570;  1 drivers
+v0xaaab65874740_0 .net *"_ivl_26", 31 0, L_0xaaab658e0a50;  1 drivers
+L_0xffff596705b8 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab65874820_0 .net *"_ivl_29", 30 0, L_0xffff596705b8;  1 drivers
+v0xaaab658796f0_0 .net *"_ivl_3", 0 0, L_0xaaab658e0090;  1 drivers
+v0xaaab658797d0_0 .net "can_subtract", 0 0, L_0xaaab658e0260;  1 drivers
+v0xaaab65879890_0 .net "i_dividend", 31 0, L_0xaaab658df910;  alias, 1 drivers
+v0xaaab6587e6a0_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596bdea8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab6587e740_0 .net "i_quotient", 31 0, o0xffff596bdea8;  0 drivers
+v0xaaab6587e800_0 .net "i_remainder", 31 0, L_0xaaab658df6f0;  alias, 1 drivers
+v0xaaab657d09c0_0 .net "new_remainder", 31 0, L_0xaaab658e01c0;  1 drivers
+v0xaaab657d0a80_0 .net "o_dividend", 31 0, L_0xaaab658e0680;  alias, 1 drivers
+v0xaaab657d0b60_0 .net "o_quotient", 31 0, L_0xaaab658e0b40;  1 drivers
+v0xaaab657d0d50_0 .net "o_quotient_bit", 0 0, L_0xaaab658e03f0;  1 drivers
+v0xaaab65793470_0 .net "o_remainder", 31 0, L_0xaaab658e0460;  alias, 1 drivers
+v0xaaab65793550_0 .net "subtracted_remainder", 31 0, L_0xaaab658e0350;  1 drivers
+L_0xaaab658dfff0 .part L_0xaaab658df6f0, 0, 31;
+L_0xaaab658e0090 .part L_0xaaab658df910, 31, 1;
+L_0xaaab658e01c0 .concat [ 1 31 0 0], L_0xaaab658e0090, L_0xaaab658dfff0;
+L_0xaaab658e0260 .cmp/ge 32, L_0xaaab658e01c0, o0xffff596bc228;
+L_0xaaab658e0350 .arith/sub 32, L_0xaaab658e01c0, o0xffff596bc228;
+L_0xaaab658e0460 .functor MUXZ 32, L_0xaaab658e01c0, L_0xaaab658e0350, L_0xaaab658e0260, C4<>;
+L_0xaaab658e05e0 .part L_0xaaab658df910, 0, 31;
+L_0xaaab658e0680 .concat [ 1 31 0 0], L_0xffff59670528, L_0xaaab658e05e0;
+L_0xaaab658e0810 .part o0xffff596bdea8, 0, 31;
+L_0xaaab658e08b0 .concat [ 1 31 0 0], L_0xffff59670570, L_0xaaab658e0810;
+L_0xaaab658e0a50 .concat [ 1 31 0 0], L_0xaaab658e03f0, L_0xffff596705b8;
+S_0xaaab65793730 .scope generate, "stage[7]" "stage[7]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab65874900 .param/l "i" 1 3 26, +C4<0111>;
+S_0xaaab658a2690 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab65793730;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e10e0 .functor BUFZ 1, L_0xaaab658e0f50, C4<0>, C4<0>, C4<0>;
+L_0xaaab658e1830 .functor OR 32, L_0xaaab658e15a0, L_0xaaab658e1740, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658a2990_0 .net *"_ivl_1", 30 0, L_0xaaab658e0c50;  1 drivers
+v0xaaab658a2a50_0 .net *"_ivl_16", 30 0, L_0xaaab658e12d0;  1 drivers
+L_0xffff59670600 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a2b30_0 .net *"_ivl_18", 0 0, L_0xffff59670600;  1 drivers
+v0xaaab658a2bf0_0 .net *"_ivl_20", 31 0, L_0xaaab658e15a0;  1 drivers
+v0xaaab658a2cd0_0 .net *"_ivl_22", 30 0, L_0xaaab658e1500;  1 drivers
+L_0xffff59670648 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a2e00_0 .net *"_ivl_24", 0 0, L_0xffff59670648;  1 drivers
+v0xaaab658a2ee0_0 .net *"_ivl_26", 31 0, L_0xaaab658e1740;  1 drivers
+L_0xffff59670690 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a2fc0_0 .net *"_ivl_29", 30 0, L_0xffff59670690;  1 drivers
+v0xaaab658a30a0_0 .net *"_ivl_3", 0 0, L_0xaaab658e0d80;  1 drivers
+v0xaaab658a3180_0 .net "can_subtract", 0 0, L_0xaaab658e0f50;  1 drivers
+v0xaaab658a3240_0 .net "i_dividend", 31 0, L_0xaaab658e0680;  alias, 1 drivers
+v0xaaab658a3300_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596be358 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658a33a0_0 .net "i_quotient", 31 0, o0xffff596be358;  0 drivers
+v0xaaab658a3480_0 .net "i_remainder", 31 0, L_0xaaab658e0460;  alias, 1 drivers
+v0xaaab658a3570_0 .net "new_remainder", 31 0, L_0xaaab658e0eb0;  1 drivers
+v0xaaab658a3630_0 .net "o_dividend", 31 0, L_0xaaab658e1370;  alias, 1 drivers
+v0xaaab658a3710_0 .net "o_quotient", 31 0, L_0xaaab658e1830;  1 drivers
+v0xaaab658a3900_0 .net "o_quotient_bit", 0 0, L_0xaaab658e10e0;  1 drivers
+v0xaaab658a39c0_0 .net "o_remainder", 31 0, L_0xaaab658e1150;  alias, 1 drivers
+v0xaaab658a3aa0_0 .net "subtracted_remainder", 31 0, L_0xaaab658e1040;  1 drivers
+L_0xaaab658e0c50 .part L_0xaaab658e0460, 0, 31;
+L_0xaaab658e0d80 .part L_0xaaab658e0680, 31, 1;
+L_0xaaab658e0eb0 .concat [ 1 31 0 0], L_0xaaab658e0d80, L_0xaaab658e0c50;
+L_0xaaab658e0f50 .cmp/ge 32, L_0xaaab658e0eb0, o0xffff596bc228;
+L_0xaaab658e1040 .arith/sub 32, L_0xaaab658e0eb0, o0xffff596bc228;
+L_0xaaab658e1150 .functor MUXZ 32, L_0xaaab658e0eb0, L_0xaaab658e1040, L_0xaaab658e0f50, C4<>;
+L_0xaaab658e12d0 .part L_0xaaab658e0680, 0, 31;
+L_0xaaab658e1370 .concat [ 1 31 0 0], L_0xffff59670600, L_0xaaab658e12d0;
+L_0xaaab658e1500 .part o0xffff596be358, 0, 31;
+L_0xaaab658e15a0 .concat [ 1 31 0 0], L_0xffff59670648, L_0xaaab658e1500;
+L_0xaaab658e1740 .concat [ 1 31 0 0], L_0xaaab658e10e0, L_0xffff59670690;
+S_0xaaab658a3c80 .scope generate, "stage[8]" "stage[8]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658154d0 .param/l "i" 1 3 26, +C4<01000>;
+S_0xaaab658a3ec0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658a3c80;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e1dd0 .functor BUFZ 1, L_0xaaab658e1c40, C4<0>, C4<0>, C4<0>;
+L_0xaaab658e2520 .functor OR 32, L_0xaaab658e2290, L_0xaaab658e2430, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658a41c0_0 .net *"_ivl_1", 30 0, L_0xaaab658e1940;  1 drivers
+v0xaaab658a42c0_0 .net *"_ivl_16", 30 0, L_0xaaab658e1fc0;  1 drivers
+L_0xffff596706d8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a43a0_0 .net *"_ivl_18", 0 0, L_0xffff596706d8;  1 drivers
+v0xaaab658a4490_0 .net *"_ivl_20", 31 0, L_0xaaab658e2290;  1 drivers
+v0xaaab658a4570_0 .net *"_ivl_22", 30 0, L_0xaaab658e21f0;  1 drivers
+L_0xffff59670720 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a46a0_0 .net *"_ivl_24", 0 0, L_0xffff59670720;  1 drivers
+v0xaaab658a4780_0 .net *"_ivl_26", 31 0, L_0xaaab658e2430;  1 drivers
+L_0xffff59670768 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a4860_0 .net *"_ivl_29", 30 0, L_0xffff59670768;  1 drivers
+v0xaaab658a4940_0 .net *"_ivl_3", 0 0, L_0xaaab658e1a70;  1 drivers
+v0xaaab658a4ab0_0 .net "can_subtract", 0 0, L_0xaaab658e1c40;  1 drivers
+v0xaaab658a4b70_0 .net "i_dividend", 31 0, L_0xaaab658e1370;  alias, 1 drivers
+v0xaaab658a4c30_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596be808 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658a4de0_0 .net "i_quotient", 31 0, o0xffff596be808;  0 drivers
+v0xaaab658a4ec0_0 .net "i_remainder", 31 0, L_0xaaab658e1150;  alias, 1 drivers
+v0xaaab658a4fb0_0 .net "new_remainder", 31 0, L_0xaaab658e1ba0;  1 drivers
+v0xaaab658a5070_0 .net "o_dividend", 31 0, L_0xaaab658e2060;  alias, 1 drivers
+v0xaaab658a5150_0 .net "o_quotient", 31 0, L_0xaaab658e2520;  1 drivers
+v0xaaab658a5340_0 .net "o_quotient_bit", 0 0, L_0xaaab658e1dd0;  1 drivers
+v0xaaab658a5400_0 .net "o_remainder", 31 0, L_0xaaab658e1e40;  alias, 1 drivers
+v0xaaab658a54e0_0 .net "subtracted_remainder", 31 0, L_0xaaab658e1d30;  1 drivers
+L_0xaaab658e1940 .part L_0xaaab658e1150, 0, 31;
+L_0xaaab658e1a70 .part L_0xaaab658e1370, 31, 1;
+L_0xaaab658e1ba0 .concat [ 1 31 0 0], L_0xaaab658e1a70, L_0xaaab658e1940;
+L_0xaaab658e1c40 .cmp/ge 32, L_0xaaab658e1ba0, o0xffff596bc228;
+L_0xaaab658e1d30 .arith/sub 32, L_0xaaab658e1ba0, o0xffff596bc228;
+L_0xaaab658e1e40 .functor MUXZ 32, L_0xaaab658e1ba0, L_0xaaab658e1d30, L_0xaaab658e1c40, C4<>;
+L_0xaaab658e1fc0 .part L_0xaaab658e1370, 0, 31;
+L_0xaaab658e2060 .concat [ 1 31 0 0], L_0xffff596706d8, L_0xaaab658e1fc0;
+L_0xaaab658e21f0 .part o0xffff596be808, 0, 31;
+L_0xaaab658e2290 .concat [ 1 31 0 0], L_0xffff59670720, L_0xaaab658e21f0;
+L_0xaaab658e2430 .concat [ 1 31 0 0], L_0xaaab658e1dd0, L_0xffff59670768;
+S_0xaaab658a56c0 .scope generate, "stage[9]" "stage[9]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658a5870 .param/l "i" 1 3 26, +C4<01001>;
+S_0xaaab658a5950 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658a56c0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e2ac0 .functor BUFZ 1, L_0xaaab658e2930, C4<0>, C4<0>, C4<0>;
+L_0xaaab658e3210 .functor OR 32, L_0xaaab658e2f80, L_0xaaab658e3120, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658a5c50_0 .net *"_ivl_1", 30 0, L_0xaaab658e2630;  1 drivers
+v0xaaab658a5d50_0 .net *"_ivl_16", 30 0, L_0xaaab658e2cb0;  1 drivers
+L_0xffff596707b0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a5e30_0 .net *"_ivl_18", 0 0, L_0xffff596707b0;  1 drivers
+v0xaaab658a5f20_0 .net *"_ivl_20", 31 0, L_0xaaab658e2f80;  1 drivers
+v0xaaab658a6000_0 .net *"_ivl_22", 30 0, L_0xaaab658e2ee0;  1 drivers
+L_0xffff596707f8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a6130_0 .net *"_ivl_24", 0 0, L_0xffff596707f8;  1 drivers
+v0xaaab658a6210_0 .net *"_ivl_26", 31 0, L_0xaaab658e3120;  1 drivers
+L_0xffff59670840 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a62f0_0 .net *"_ivl_29", 30 0, L_0xffff59670840;  1 drivers
+v0xaaab658a63d0_0 .net *"_ivl_3", 0 0, L_0xaaab658e2760;  1 drivers
+v0xaaab658a64b0_0 .net "can_subtract", 0 0, L_0xaaab658e2930;  1 drivers
+v0xaaab658a6570_0 .net "i_dividend", 31 0, L_0xaaab658e2060;  alias, 1 drivers
+v0xaaab658a6630_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596becb8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658a66d0_0 .net "i_quotient", 31 0, o0xffff596becb8;  0 drivers
+v0xaaab658a67b0_0 .net "i_remainder", 31 0, L_0xaaab658e1e40;  alias, 1 drivers
+v0xaaab658a68a0_0 .net "new_remainder", 31 0, L_0xaaab658e2890;  1 drivers
+v0xaaab658a6960_0 .net "o_dividend", 31 0, L_0xaaab658e2d50;  alias, 1 drivers
+v0xaaab658a6a40_0 .net "o_quotient", 31 0, L_0xaaab658e3210;  1 drivers
+v0xaaab658a6c30_0 .net "o_quotient_bit", 0 0, L_0xaaab658e2ac0;  1 drivers
+v0xaaab658a6cf0_0 .net "o_remainder", 31 0, L_0xaaab658e2b30;  alias, 1 drivers
+v0xaaab658a6dd0_0 .net "subtracted_remainder", 31 0, L_0xaaab658e2a20;  1 drivers
+L_0xaaab658e2630 .part L_0xaaab658e1e40, 0, 31;
+L_0xaaab658e2760 .part L_0xaaab658e2060, 31, 1;
+L_0xaaab658e2890 .concat [ 1 31 0 0], L_0xaaab658e2760, L_0xaaab658e2630;
+L_0xaaab658e2930 .cmp/ge 32, L_0xaaab658e2890, o0xffff596bc228;
+L_0xaaab658e2a20 .arith/sub 32, L_0xaaab658e2890, o0xffff596bc228;
+L_0xaaab658e2b30 .functor MUXZ 32, L_0xaaab658e2890, L_0xaaab658e2a20, L_0xaaab658e2930, C4<>;
+L_0xaaab658e2cb0 .part L_0xaaab658e2060, 0, 31;
+L_0xaaab658e2d50 .concat [ 1 31 0 0], L_0xffff596707b0, L_0xaaab658e2cb0;
+L_0xaaab658e2ee0 .part o0xffff596becb8, 0, 31;
+L_0xaaab658e2f80 .concat [ 1 31 0 0], L_0xffff596707f8, L_0xaaab658e2ee0;
+L_0xaaab658e3120 .concat [ 1 31 0 0], L_0xaaab658e2ac0, L_0xffff59670840;
+S_0xaaab658a6fb0 .scope generate, "stage[10]" "stage[10]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658a7160 .param/l "i" 1 3 26, +C4<01010>;
+S_0xaaab658a7240 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658a6fb0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e37b0 .functor BUFZ 1, L_0xaaab658e3620, C4<0>, C4<0>, C4<0>;
+L_0xaaab658e3f00 .functor OR 32, L_0xaaab658e3c70, L_0xaaab658e3e10, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658a7540_0 .net *"_ivl_1", 30 0, L_0xaaab658e3320;  1 drivers
+v0xaaab658a7640_0 .net *"_ivl_16", 30 0, L_0xaaab658e39a0;  1 drivers
+L_0xffff59670888 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a7720_0 .net *"_ivl_18", 0 0, L_0xffff59670888;  1 drivers
+v0xaaab658a7810_0 .net *"_ivl_20", 31 0, L_0xaaab658e3c70;  1 drivers
+v0xaaab658a78f0_0 .net *"_ivl_22", 30 0, L_0xaaab658e3bd0;  1 drivers
+L_0xffff596708d0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a7a20_0 .net *"_ivl_24", 0 0, L_0xffff596708d0;  1 drivers
+v0xaaab658a7b00_0 .net *"_ivl_26", 31 0, L_0xaaab658e3e10;  1 drivers
+L_0xffff59670918 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a7be0_0 .net *"_ivl_29", 30 0, L_0xffff59670918;  1 drivers
+v0xaaab658a7cc0_0 .net *"_ivl_3", 0 0, L_0xaaab658e3450;  1 drivers
+v0xaaab658a7da0_0 .net "can_subtract", 0 0, L_0xaaab658e3620;  1 drivers
+v0xaaab658a7e60_0 .net "i_dividend", 31 0, L_0xaaab658e2d50;  alias, 1 drivers
+v0xaaab658a7f20_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596bf168 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658a7fc0_0 .net "i_quotient", 31 0, o0xffff596bf168;  0 drivers
+v0xaaab658a80a0_0 .net "i_remainder", 31 0, L_0xaaab658e2b30;  alias, 1 drivers
+v0xaaab658a8190_0 .net "new_remainder", 31 0, L_0xaaab658e3580;  1 drivers
+v0xaaab658a8250_0 .net "o_dividend", 31 0, L_0xaaab658e3a40;  alias, 1 drivers
+v0xaaab658a8330_0 .net "o_quotient", 31 0, L_0xaaab658e3f00;  1 drivers
+v0xaaab658a8520_0 .net "o_quotient_bit", 0 0, L_0xaaab658e37b0;  1 drivers
+v0xaaab658a85e0_0 .net "o_remainder", 31 0, L_0xaaab658e3820;  alias, 1 drivers
+v0xaaab658a86c0_0 .net "subtracted_remainder", 31 0, L_0xaaab658e3710;  1 drivers
+L_0xaaab658e3320 .part L_0xaaab658e2b30, 0, 31;
+L_0xaaab658e3450 .part L_0xaaab658e2d50, 31, 1;
+L_0xaaab658e3580 .concat [ 1 31 0 0], L_0xaaab658e3450, L_0xaaab658e3320;
+L_0xaaab658e3620 .cmp/ge 32, L_0xaaab658e3580, o0xffff596bc228;
+L_0xaaab658e3710 .arith/sub 32, L_0xaaab658e3580, o0xffff596bc228;
+L_0xaaab658e3820 .functor MUXZ 32, L_0xaaab658e3580, L_0xaaab658e3710, L_0xaaab658e3620, C4<>;
+L_0xaaab658e39a0 .part L_0xaaab658e2d50, 0, 31;
+L_0xaaab658e3a40 .concat [ 1 31 0 0], L_0xffff59670888, L_0xaaab658e39a0;
+L_0xaaab658e3bd0 .part o0xffff596bf168, 0, 31;
+L_0xaaab658e3c70 .concat [ 1 31 0 0], L_0xffff596708d0, L_0xaaab658e3bd0;
+L_0xaaab658e3e10 .concat [ 1 31 0 0], L_0xaaab658e37b0, L_0xffff59670918;
+S_0xaaab658a88a0 .scope generate, "stage[11]" "stage[11]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658a8a50 .param/l "i" 1 3 26, +C4<01011>;
+S_0xaaab658a8b30 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658a88a0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e44a0 .functor BUFZ 1, L_0xaaab658e4310, C4<0>, C4<0>, C4<0>;
+L_0xaaab658e4bf0 .functor OR 32, L_0xaaab658e4960, L_0xaaab658e4b00, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658a8e30_0 .net *"_ivl_1", 30 0, L_0xaaab658e4010;  1 drivers
+v0xaaab658a8f30_0 .net *"_ivl_16", 30 0, L_0xaaab658e4690;  1 drivers
+L_0xffff59670960 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a9010_0 .net *"_ivl_18", 0 0, L_0xffff59670960;  1 drivers
+v0xaaab658a9100_0 .net *"_ivl_20", 31 0, L_0xaaab658e4960;  1 drivers
+v0xaaab658a91e0_0 .net *"_ivl_22", 30 0, L_0xaaab658e48c0;  1 drivers
+L_0xffff596709a8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a9310_0 .net *"_ivl_24", 0 0, L_0xffff596709a8;  1 drivers
+v0xaaab658a93f0_0 .net *"_ivl_26", 31 0, L_0xaaab658e4b00;  1 drivers
+L_0xffff596709f0 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658a94d0_0 .net *"_ivl_29", 30 0, L_0xffff596709f0;  1 drivers
+v0xaaab658a95b0_0 .net *"_ivl_3", 0 0, L_0xaaab658e4140;  1 drivers
+v0xaaab658a9690_0 .net "can_subtract", 0 0, L_0xaaab658e4310;  1 drivers
+v0xaaab658a9750_0 .net "i_dividend", 31 0, L_0xaaab658e3a40;  alias, 1 drivers
+v0xaaab658a9810_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596bf618 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658a98b0_0 .net "i_quotient", 31 0, o0xffff596bf618;  0 drivers
+v0xaaab658a9990_0 .net "i_remainder", 31 0, L_0xaaab658e3820;  alias, 1 drivers
+v0xaaab658a9a80_0 .net "new_remainder", 31 0, L_0xaaab658e4270;  1 drivers
+v0xaaab658a9b40_0 .net "o_dividend", 31 0, L_0xaaab658e4730;  alias, 1 drivers
+v0xaaab658a9c20_0 .net "o_quotient", 31 0, L_0xaaab658e4bf0;  1 drivers
+v0xaaab658a9e10_0 .net "o_quotient_bit", 0 0, L_0xaaab658e44a0;  1 drivers
+v0xaaab658a9ed0_0 .net "o_remainder", 31 0, L_0xaaab658e4510;  alias, 1 drivers
+v0xaaab658a9fb0_0 .net "subtracted_remainder", 31 0, L_0xaaab658e4400;  1 drivers
+L_0xaaab658e4010 .part L_0xaaab658e3820, 0, 31;
+L_0xaaab658e4140 .part L_0xaaab658e3a40, 31, 1;
+L_0xaaab658e4270 .concat [ 1 31 0 0], L_0xaaab658e4140, L_0xaaab658e4010;
+L_0xaaab658e4310 .cmp/ge 32, L_0xaaab658e4270, o0xffff596bc228;
+L_0xaaab658e4400 .arith/sub 32, L_0xaaab658e4270, o0xffff596bc228;
+L_0xaaab658e4510 .functor MUXZ 32, L_0xaaab658e4270, L_0xaaab658e4400, L_0xaaab658e4310, C4<>;
+L_0xaaab658e4690 .part L_0xaaab658e3a40, 0, 31;
+L_0xaaab658e4730 .concat [ 1 31 0 0], L_0xffff59670960, L_0xaaab658e4690;
+L_0xaaab658e48c0 .part o0xffff596bf618, 0, 31;
+L_0xaaab658e4960 .concat [ 1 31 0 0], L_0xffff596709a8, L_0xaaab658e48c0;
+L_0xaaab658e4b00 .concat [ 1 31 0 0], L_0xaaab658e44a0, L_0xffff596709f0;
+S_0xaaab658aa190 .scope generate, "stage[12]" "stage[12]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658aa340 .param/l "i" 1 3 26, +C4<01100>;
+S_0xaaab658aa420 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658aa190;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e5190 .functor BUFZ 1, L_0xaaab658e5000, C4<0>, C4<0>, C4<0>;
+L_0xaaab658e58e0 .functor OR 32, L_0xaaab658e5650, L_0xaaab658e57f0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658aa720_0 .net *"_ivl_1", 30 0, L_0xaaab658e4d00;  1 drivers
+v0xaaab658aa820_0 .net *"_ivl_16", 30 0, L_0xaaab658e5380;  1 drivers
+L_0xffff59670a38 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658aa900_0 .net *"_ivl_18", 0 0, L_0xffff59670a38;  1 drivers
+v0xaaab658aa9f0_0 .net *"_ivl_20", 31 0, L_0xaaab658e5650;  1 drivers
+v0xaaab658aaad0_0 .net *"_ivl_22", 30 0, L_0xaaab658e55b0;  1 drivers
+L_0xffff59670a80 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658aac00_0 .net *"_ivl_24", 0 0, L_0xffff59670a80;  1 drivers
+v0xaaab658aace0_0 .net *"_ivl_26", 31 0, L_0xaaab658e57f0;  1 drivers
+L_0xffff59670ac8 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658aadc0_0 .net *"_ivl_29", 30 0, L_0xffff59670ac8;  1 drivers
+v0xaaab658aaea0_0 .net *"_ivl_3", 0 0, L_0xaaab658e4e30;  1 drivers
+v0xaaab658aaf80_0 .net "can_subtract", 0 0, L_0xaaab658e5000;  1 drivers
+v0xaaab658ab040_0 .net "i_dividend", 31 0, L_0xaaab658e4730;  alias, 1 drivers
+v0xaaab658ab100_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596bfac8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658ab1a0_0 .net "i_quotient", 31 0, o0xffff596bfac8;  0 drivers
+v0xaaab658ab280_0 .net "i_remainder", 31 0, L_0xaaab658e4510;  alias, 1 drivers
+v0xaaab658ab370_0 .net "new_remainder", 31 0, L_0xaaab658e4f60;  1 drivers
+v0xaaab658ab430_0 .net "o_dividend", 31 0, L_0xaaab658e5420;  alias, 1 drivers
+v0xaaab658ab510_0 .net "o_quotient", 31 0, L_0xaaab658e58e0;  1 drivers
+v0xaaab658ab700_0 .net "o_quotient_bit", 0 0, L_0xaaab658e5190;  1 drivers
+v0xaaab658ab7c0_0 .net "o_remainder", 31 0, L_0xaaab658e5200;  alias, 1 drivers
+v0xaaab658ab8a0_0 .net "subtracted_remainder", 31 0, L_0xaaab658e50f0;  1 drivers
+L_0xaaab658e4d00 .part L_0xaaab658e4510, 0, 31;
+L_0xaaab658e4e30 .part L_0xaaab658e4730, 31, 1;
+L_0xaaab658e4f60 .concat [ 1 31 0 0], L_0xaaab658e4e30, L_0xaaab658e4d00;
+L_0xaaab658e5000 .cmp/ge 32, L_0xaaab658e4f60, o0xffff596bc228;
+L_0xaaab658e50f0 .arith/sub 32, L_0xaaab658e4f60, o0xffff596bc228;
+L_0xaaab658e5200 .functor MUXZ 32, L_0xaaab658e4f60, L_0xaaab658e50f0, L_0xaaab658e5000, C4<>;
+L_0xaaab658e5380 .part L_0xaaab658e4730, 0, 31;
+L_0xaaab658e5420 .concat [ 1 31 0 0], L_0xffff59670a38, L_0xaaab658e5380;
+L_0xaaab658e55b0 .part o0xffff596bfac8, 0, 31;
+L_0xaaab658e5650 .concat [ 1 31 0 0], L_0xffff59670a80, L_0xaaab658e55b0;
+L_0xaaab658e57f0 .concat [ 1 31 0 0], L_0xaaab658e5190, L_0xffff59670ac8;
+S_0xaaab658aba80 .scope generate, "stage[13]" "stage[13]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658abc30 .param/l "i" 1 3 26, +C4<01101>;
+S_0xaaab658abd10 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658aba80;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e5e80 .functor BUFZ 1, L_0xaaab658e5cf0, C4<0>, C4<0>, C4<0>;
+L_0xaaab658e65d0 .functor OR 32, L_0xaaab658e6340, L_0xaaab658e64e0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658ac010_0 .net *"_ivl_1", 30 0, L_0xaaab658e59f0;  1 drivers
+v0xaaab658ac110_0 .net *"_ivl_16", 30 0, L_0xaaab658e6070;  1 drivers
+L_0xffff59670b10 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658ac1f0_0 .net *"_ivl_18", 0 0, L_0xffff59670b10;  1 drivers
+v0xaaab658ac2e0_0 .net *"_ivl_20", 31 0, L_0xaaab658e6340;  1 drivers
+v0xaaab658ac3c0_0 .net *"_ivl_22", 30 0, L_0xaaab658e62a0;  1 drivers
+L_0xffff59670b58 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658ac4f0_0 .net *"_ivl_24", 0 0, L_0xffff59670b58;  1 drivers
+v0xaaab658ac5d0_0 .net *"_ivl_26", 31 0, L_0xaaab658e64e0;  1 drivers
+L_0xffff59670ba0 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658ac6b0_0 .net *"_ivl_29", 30 0, L_0xffff59670ba0;  1 drivers
+v0xaaab658ac790_0 .net *"_ivl_3", 0 0, L_0xaaab658e5b20;  1 drivers
+v0xaaab658ac870_0 .net "can_subtract", 0 0, L_0xaaab658e5cf0;  1 drivers
+v0xaaab658ac930_0 .net "i_dividend", 31 0, L_0xaaab658e5420;  alias, 1 drivers
+v0xaaab658ac9f0_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596bff78 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658aca90_0 .net "i_quotient", 31 0, o0xffff596bff78;  0 drivers
+v0xaaab658acb70_0 .net "i_remainder", 31 0, L_0xaaab658e5200;  alias, 1 drivers
+v0xaaab658acc60_0 .net "new_remainder", 31 0, L_0xaaab658e5c50;  1 drivers
+v0xaaab658acd20_0 .net "o_dividend", 31 0, L_0xaaab658e6110;  alias, 1 drivers
+v0xaaab658ace00_0 .net "o_quotient", 31 0, L_0xaaab658e65d0;  1 drivers
+v0xaaab658acff0_0 .net "o_quotient_bit", 0 0, L_0xaaab658e5e80;  1 drivers
+v0xaaab658ad0b0_0 .net "o_remainder", 31 0, L_0xaaab658e5ef0;  alias, 1 drivers
+v0xaaab658ad190_0 .net "subtracted_remainder", 31 0, L_0xaaab658e5de0;  1 drivers
+L_0xaaab658e59f0 .part L_0xaaab658e5200, 0, 31;
+L_0xaaab658e5b20 .part L_0xaaab658e5420, 31, 1;
+L_0xaaab658e5c50 .concat [ 1 31 0 0], L_0xaaab658e5b20, L_0xaaab658e59f0;
+L_0xaaab658e5cf0 .cmp/ge 32, L_0xaaab658e5c50, o0xffff596bc228;
+L_0xaaab658e5de0 .arith/sub 32, L_0xaaab658e5c50, o0xffff596bc228;
+L_0xaaab658e5ef0 .functor MUXZ 32, L_0xaaab658e5c50, L_0xaaab658e5de0, L_0xaaab658e5cf0, C4<>;
+L_0xaaab658e6070 .part L_0xaaab658e5420, 0, 31;
+L_0xaaab658e6110 .concat [ 1 31 0 0], L_0xffff59670b10, L_0xaaab658e6070;
+L_0xaaab658e62a0 .part o0xffff596bff78, 0, 31;
+L_0xaaab658e6340 .concat [ 1 31 0 0], L_0xffff59670b58, L_0xaaab658e62a0;
+L_0xaaab658e64e0 .concat [ 1 31 0 0], L_0xaaab658e5e80, L_0xffff59670ba0;
+S_0xaaab658ad370 .scope generate, "stage[14]" "stage[14]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658ad520 .param/l "i" 1 3 26, +C4<01110>;
+S_0xaaab658ad600 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658ad370;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e6b70 .functor BUFZ 1, L_0xaaab658e69e0, C4<0>, C4<0>, C4<0>;
+L_0xaaab658e72c0 .functor OR 32, L_0xaaab658e7030, L_0xaaab658e71d0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658ad900_0 .net *"_ivl_1", 30 0, L_0xaaab658e66e0;  1 drivers
+v0xaaab658ada00_0 .net *"_ivl_16", 30 0, L_0xaaab658e6d60;  1 drivers
+L_0xffff59670be8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658adae0_0 .net *"_ivl_18", 0 0, L_0xffff59670be8;  1 drivers
+v0xaaab658adbd0_0 .net *"_ivl_20", 31 0, L_0xaaab658e7030;  1 drivers
+v0xaaab658adcb0_0 .net *"_ivl_22", 30 0, L_0xaaab658e6f90;  1 drivers
+L_0xffff59670c30 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658adde0_0 .net *"_ivl_24", 0 0, L_0xffff59670c30;  1 drivers
+v0xaaab658adec0_0 .net *"_ivl_26", 31 0, L_0xaaab658e71d0;  1 drivers
+L_0xffff59670c78 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658adfa0_0 .net *"_ivl_29", 30 0, L_0xffff59670c78;  1 drivers
+v0xaaab658ae080_0 .net *"_ivl_3", 0 0, L_0xaaab658e6810;  1 drivers
+v0xaaab658ae160_0 .net "can_subtract", 0 0, L_0xaaab658e69e0;  1 drivers
+v0xaaab658ae220_0 .net "i_dividend", 31 0, L_0xaaab658e6110;  alias, 1 drivers
+v0xaaab658ae2e0_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c0428 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658ae380_0 .net "i_quotient", 31 0, o0xffff596c0428;  0 drivers
+v0xaaab658ae460_0 .net "i_remainder", 31 0, L_0xaaab658e5ef0;  alias, 1 drivers
+v0xaaab658ae550_0 .net "new_remainder", 31 0, L_0xaaab658e6940;  1 drivers
+v0xaaab658ae610_0 .net "o_dividend", 31 0, L_0xaaab658e6e00;  alias, 1 drivers
+v0xaaab658ae6f0_0 .net "o_quotient", 31 0, L_0xaaab658e72c0;  1 drivers
+v0xaaab658ae8e0_0 .net "o_quotient_bit", 0 0, L_0xaaab658e6b70;  1 drivers
+v0xaaab658ae9a0_0 .net "o_remainder", 31 0, L_0xaaab658e6be0;  alias, 1 drivers
+v0xaaab658aea80_0 .net "subtracted_remainder", 31 0, L_0xaaab658e6ad0;  1 drivers
+L_0xaaab658e66e0 .part L_0xaaab658e5ef0, 0, 31;
+L_0xaaab658e6810 .part L_0xaaab658e6110, 31, 1;
+L_0xaaab658e6940 .concat [ 1 31 0 0], L_0xaaab658e6810, L_0xaaab658e66e0;
+L_0xaaab658e69e0 .cmp/ge 32, L_0xaaab658e6940, o0xffff596bc228;
+L_0xaaab658e6ad0 .arith/sub 32, L_0xaaab658e6940, o0xffff596bc228;
+L_0xaaab658e6be0 .functor MUXZ 32, L_0xaaab658e6940, L_0xaaab658e6ad0, L_0xaaab658e69e0, C4<>;
+L_0xaaab658e6d60 .part L_0xaaab658e6110, 0, 31;
+L_0xaaab658e6e00 .concat [ 1 31 0 0], L_0xffff59670be8, L_0xaaab658e6d60;
+L_0xaaab658e6f90 .part o0xffff596c0428, 0, 31;
+L_0xaaab658e7030 .concat [ 1 31 0 0], L_0xffff59670c30, L_0xaaab658e6f90;
+L_0xaaab658e71d0 .concat [ 1 31 0 0], L_0xaaab658e6b70, L_0xffff59670c78;
+S_0xaaab658aec60 .scope generate, "stage[15]" "stage[15]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658aee10 .param/l "i" 1 3 26, +C4<01111>;
+S_0xaaab658aeef0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658aec60;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e7860 .functor BUFZ 1, L_0xaaab658e76d0, C4<0>, C4<0>, C4<0>;
+L_0xaaab658e87c0 .functor OR 32, L_0xaaab658e8530, L_0xaaab658e86d0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658af1f0_0 .net *"_ivl_1", 30 0, L_0xaaab658e73d0;  1 drivers
+v0xaaab658af2f0_0 .net *"_ivl_16", 30 0, L_0xaaab658e8260;  1 drivers
+L_0xffff59670cc0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658af3d0_0 .net *"_ivl_18", 0 0, L_0xffff59670cc0;  1 drivers
+v0xaaab658af4c0_0 .net *"_ivl_20", 31 0, L_0xaaab658e8530;  1 drivers
+v0xaaab658af5a0_0 .net *"_ivl_22", 30 0, L_0xaaab658e8490;  1 drivers
+L_0xffff59670d08 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658af6d0_0 .net *"_ivl_24", 0 0, L_0xffff59670d08;  1 drivers
+v0xaaab658af7b0_0 .net *"_ivl_26", 31 0, L_0xaaab658e86d0;  1 drivers
+L_0xffff59670d50 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658af890_0 .net *"_ivl_29", 30 0, L_0xffff59670d50;  1 drivers
+v0xaaab658af970_0 .net *"_ivl_3", 0 0, L_0xaaab658e7500;  1 drivers
+v0xaaab658afa50_0 .net "can_subtract", 0 0, L_0xaaab658e76d0;  1 drivers
+v0xaaab658afb10_0 .net "i_dividend", 31 0, L_0xaaab658e6e00;  alias, 1 drivers
+v0xaaab658afbd0_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c08d8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658afc70_0 .net "i_quotient", 31 0, o0xffff596c08d8;  0 drivers
+v0xaaab658afd50_0 .net "i_remainder", 31 0, L_0xaaab658e6be0;  alias, 1 drivers
+v0xaaab658afe40_0 .net "new_remainder", 31 0, L_0xaaab658e7630;  1 drivers
+v0xaaab658aff00_0 .net "o_dividend", 31 0, L_0xaaab658e8300;  alias, 1 drivers
+v0xaaab658affe0_0 .net "o_quotient", 31 0, L_0xaaab658e87c0;  1 drivers
+v0xaaab658b01d0_0 .net "o_quotient_bit", 0 0, L_0xaaab658e7860;  1 drivers
+v0xaaab658b0290_0 .net "o_remainder", 31 0, L_0xaaab658e80e0;  alias, 1 drivers
+v0xaaab658b0370_0 .net "subtracted_remainder", 31 0, L_0xaaab658e77c0;  1 drivers
+L_0xaaab658e73d0 .part L_0xaaab658e6be0, 0, 31;
+L_0xaaab658e7500 .part L_0xaaab658e6e00, 31, 1;
+L_0xaaab658e7630 .concat [ 1 31 0 0], L_0xaaab658e7500, L_0xaaab658e73d0;
+L_0xaaab658e76d0 .cmp/ge 32, L_0xaaab658e7630, o0xffff596bc228;
+L_0xaaab658e77c0 .arith/sub 32, L_0xaaab658e7630, o0xffff596bc228;
+L_0xaaab658e80e0 .functor MUXZ 32, L_0xaaab658e7630, L_0xaaab658e77c0, L_0xaaab658e76d0, C4<>;
+L_0xaaab658e8260 .part L_0xaaab658e6e00, 0, 31;
+L_0xaaab658e8300 .concat [ 1 31 0 0], L_0xffff59670cc0, L_0xaaab658e8260;
+L_0xaaab658e8490 .part o0xffff596c08d8, 0, 31;
+L_0xaaab658e8530 .concat [ 1 31 0 0], L_0xffff59670d08, L_0xaaab658e8490;
+L_0xaaab658e86d0 .concat [ 1 31 0 0], L_0xaaab658e7860, L_0xffff59670d50;
+S_0xaaab658b0550 .scope generate, "stage[16]" "stage[16]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658b0810 .param/l "i" 1 3 26, +C4<010000>;
+S_0xaaab658b08f0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658b0550;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e8d60 .functor BUFZ 1, L_0xaaab658e8bd0, C4<0>, C4<0>, C4<0>;
+L_0xaaab658e94b0 .functor OR 32, L_0xaaab658e9220, L_0xaaab658e93c0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658b0bf0_0 .net *"_ivl_1", 30 0, L_0xaaab658e88d0;  1 drivers
+v0xaaab658b0cf0_0 .net *"_ivl_16", 30 0, L_0xaaab658e8f50;  1 drivers
+L_0xffff59670d98 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b0dd0_0 .net *"_ivl_18", 0 0, L_0xffff59670d98;  1 drivers
+v0xaaab658b0ec0_0 .net *"_ivl_20", 31 0, L_0xaaab658e9220;  1 drivers
+v0xaaab658b0fa0_0 .net *"_ivl_22", 30 0, L_0xaaab658e9180;  1 drivers
+L_0xffff59670de0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b10d0_0 .net *"_ivl_24", 0 0, L_0xffff59670de0;  1 drivers
+v0xaaab658b11b0_0 .net *"_ivl_26", 31 0, L_0xaaab658e93c0;  1 drivers
+L_0xffff59670e28 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b1290_0 .net *"_ivl_29", 30 0, L_0xffff59670e28;  1 drivers
+v0xaaab658b1370_0 .net *"_ivl_3", 0 0, L_0xaaab658e8a00;  1 drivers
+v0xaaab658b1450_0 .net "can_subtract", 0 0, L_0xaaab658e8bd0;  1 drivers
+v0xaaab658b1510_0 .net "i_dividend", 31 0, L_0xaaab658e8300;  alias, 1 drivers
+v0xaaab658b15d0_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c0d88 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658b1880_0 .net "i_quotient", 31 0, o0xffff596c0d88;  0 drivers
+v0xaaab658b1960_0 .net "i_remainder", 31 0, L_0xaaab658e80e0;  alias, 1 drivers
+v0xaaab658b1a50_0 .net "new_remainder", 31 0, L_0xaaab658e8b30;  1 drivers
+v0xaaab658b1b10_0 .net "o_dividend", 31 0, L_0xaaab658e8ff0;  alias, 1 drivers
+v0xaaab658b1bf0_0 .net "o_quotient", 31 0, L_0xaaab658e94b0;  1 drivers
+v0xaaab658b1cd0_0 .net "o_quotient_bit", 0 0, L_0xaaab658e8d60;  1 drivers
+v0xaaab658b1d90_0 .net "o_remainder", 31 0, L_0xaaab658e8dd0;  alias, 1 drivers
+v0xaaab658b1e70_0 .net "subtracted_remainder", 31 0, L_0xaaab658e8cc0;  1 drivers
+L_0xaaab658e88d0 .part L_0xaaab658e80e0, 0, 31;
+L_0xaaab658e8a00 .part L_0xaaab658e8300, 31, 1;
+L_0xaaab658e8b30 .concat [ 1 31 0 0], L_0xaaab658e8a00, L_0xaaab658e88d0;
+L_0xaaab658e8bd0 .cmp/ge 32, L_0xaaab658e8b30, o0xffff596bc228;
+L_0xaaab658e8cc0 .arith/sub 32, L_0xaaab658e8b30, o0xffff596bc228;
+L_0xaaab658e8dd0 .functor MUXZ 32, L_0xaaab658e8b30, L_0xaaab658e8cc0, L_0xaaab658e8bd0, C4<>;
+L_0xaaab658e8f50 .part L_0xaaab658e8300, 0, 31;
+L_0xaaab658e8ff0 .concat [ 1 31 0 0], L_0xffff59670d98, L_0xaaab658e8f50;
+L_0xaaab658e9180 .part o0xffff596c0d88, 0, 31;
+L_0xaaab658e9220 .concat [ 1 31 0 0], L_0xffff59670de0, L_0xaaab658e9180;
+L_0xaaab658e93c0 .concat [ 1 31 0 0], L_0xaaab658e8d60, L_0xffff59670e28;
+S_0xaaab658b2050 .scope generate, "stage[17]" "stage[17]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658b2200 .param/l "i" 1 3 26, +C4<010001>;
+S_0xaaab658b22e0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658b2050;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658e9a50 .functor BUFZ 1, L_0xaaab658e98c0, C4<0>, C4<0>, C4<0>;
+L_0xaaab658ea1a0 .functor OR 32, L_0xaaab658e9f10, L_0xaaab658ea0b0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658b25e0_0 .net *"_ivl_1", 30 0, L_0xaaab658e95c0;  1 drivers
+v0xaaab658b26e0_0 .net *"_ivl_16", 30 0, L_0xaaab658e9c40;  1 drivers
+L_0xffff59670e70 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b27c0_0 .net *"_ivl_18", 0 0, L_0xffff59670e70;  1 drivers
+v0xaaab658b28b0_0 .net *"_ivl_20", 31 0, L_0xaaab658e9f10;  1 drivers
+v0xaaab658b2990_0 .net *"_ivl_22", 30 0, L_0xaaab658e9e70;  1 drivers
+L_0xffff59670eb8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b2ac0_0 .net *"_ivl_24", 0 0, L_0xffff59670eb8;  1 drivers
+v0xaaab658b2ba0_0 .net *"_ivl_26", 31 0, L_0xaaab658ea0b0;  1 drivers
+L_0xffff59670f00 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b2c80_0 .net *"_ivl_29", 30 0, L_0xffff59670f00;  1 drivers
+v0xaaab658b2d60_0 .net *"_ivl_3", 0 0, L_0xaaab658e96f0;  1 drivers
+v0xaaab658b2e40_0 .net "can_subtract", 0 0, L_0xaaab658e98c0;  1 drivers
+v0xaaab658b2f00_0 .net "i_dividend", 31 0, L_0xaaab658e8ff0;  alias, 1 drivers
+v0xaaab658b2fc0_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c1238 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658b3060_0 .net "i_quotient", 31 0, o0xffff596c1238;  0 drivers
+v0xaaab658b3140_0 .net "i_remainder", 31 0, L_0xaaab658e8dd0;  alias, 1 drivers
+v0xaaab658b3230_0 .net "new_remainder", 31 0, L_0xaaab658e9820;  1 drivers
+v0xaaab658b32f0_0 .net "o_dividend", 31 0, L_0xaaab658e9ce0;  alias, 1 drivers
+v0xaaab658b33d0_0 .net "o_quotient", 31 0, L_0xaaab658ea1a0;  1 drivers
+v0xaaab658b35c0_0 .net "o_quotient_bit", 0 0, L_0xaaab658e9a50;  1 drivers
+v0xaaab658b3680_0 .net "o_remainder", 31 0, L_0xaaab658e9ac0;  alias, 1 drivers
+v0xaaab658b3760_0 .net "subtracted_remainder", 31 0, L_0xaaab658e99b0;  1 drivers
+L_0xaaab658e95c0 .part L_0xaaab658e8dd0, 0, 31;
+L_0xaaab658e96f0 .part L_0xaaab658e8ff0, 31, 1;
+L_0xaaab658e9820 .concat [ 1 31 0 0], L_0xaaab658e96f0, L_0xaaab658e95c0;
+L_0xaaab658e98c0 .cmp/ge 32, L_0xaaab658e9820, o0xffff596bc228;
+L_0xaaab658e99b0 .arith/sub 32, L_0xaaab658e9820, o0xffff596bc228;
+L_0xaaab658e9ac0 .functor MUXZ 32, L_0xaaab658e9820, L_0xaaab658e99b0, L_0xaaab658e98c0, C4<>;
+L_0xaaab658e9c40 .part L_0xaaab658e8ff0, 0, 31;
+L_0xaaab658e9ce0 .concat [ 1 31 0 0], L_0xffff59670e70, L_0xaaab658e9c40;
+L_0xaaab658e9e70 .part o0xffff596c1238, 0, 31;
+L_0xaaab658e9f10 .concat [ 1 31 0 0], L_0xffff59670eb8, L_0xaaab658e9e70;
+L_0xaaab658ea0b0 .concat [ 1 31 0 0], L_0xaaab658e9a50, L_0xffff59670f00;
+S_0xaaab658b3940 .scope generate, "stage[18]" "stage[18]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658b3af0 .param/l "i" 1 3 26, +C4<010010>;
+S_0xaaab658b3bd0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658b3940;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658ea740 .functor BUFZ 1, L_0xaaab658ea5b0, C4<0>, C4<0>, C4<0>;
+L_0xaaab658eae90 .functor OR 32, L_0xaaab658eac00, L_0xaaab658eada0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658b3ed0_0 .net *"_ivl_1", 30 0, L_0xaaab658ea2b0;  1 drivers
+v0xaaab658b3fd0_0 .net *"_ivl_16", 30 0, L_0xaaab658ea930;  1 drivers
+L_0xffff59670f48 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b40b0_0 .net *"_ivl_18", 0 0, L_0xffff59670f48;  1 drivers
+v0xaaab658b41a0_0 .net *"_ivl_20", 31 0, L_0xaaab658eac00;  1 drivers
+v0xaaab658b4280_0 .net *"_ivl_22", 30 0, L_0xaaab658eab60;  1 drivers
+L_0xffff59670f90 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b43b0_0 .net *"_ivl_24", 0 0, L_0xffff59670f90;  1 drivers
+v0xaaab658b4490_0 .net *"_ivl_26", 31 0, L_0xaaab658eada0;  1 drivers
+L_0xffff59670fd8 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b4570_0 .net *"_ivl_29", 30 0, L_0xffff59670fd8;  1 drivers
+v0xaaab658b4650_0 .net *"_ivl_3", 0 0, L_0xaaab658ea3e0;  1 drivers
+v0xaaab658b4730_0 .net "can_subtract", 0 0, L_0xaaab658ea5b0;  1 drivers
+v0xaaab658b47f0_0 .net "i_dividend", 31 0, L_0xaaab658e9ce0;  alias, 1 drivers
+v0xaaab658b48b0_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c16e8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658b4950_0 .net "i_quotient", 31 0, o0xffff596c16e8;  0 drivers
+v0xaaab658b4a30_0 .net "i_remainder", 31 0, L_0xaaab658e9ac0;  alias, 1 drivers
+v0xaaab658b4b20_0 .net "new_remainder", 31 0, L_0xaaab658ea510;  1 drivers
+v0xaaab658b4be0_0 .net "o_dividend", 31 0, L_0xaaab658ea9d0;  alias, 1 drivers
+v0xaaab658b4cc0_0 .net "o_quotient", 31 0, L_0xaaab658eae90;  1 drivers
+v0xaaab658b4eb0_0 .net "o_quotient_bit", 0 0, L_0xaaab658ea740;  1 drivers
+v0xaaab658b4f70_0 .net "o_remainder", 31 0, L_0xaaab658ea7b0;  alias, 1 drivers
+v0xaaab658b5050_0 .net "subtracted_remainder", 31 0, L_0xaaab658ea6a0;  1 drivers
+L_0xaaab658ea2b0 .part L_0xaaab658e9ac0, 0, 31;
+L_0xaaab658ea3e0 .part L_0xaaab658e9ce0, 31, 1;
+L_0xaaab658ea510 .concat [ 1 31 0 0], L_0xaaab658ea3e0, L_0xaaab658ea2b0;
+L_0xaaab658ea5b0 .cmp/ge 32, L_0xaaab658ea510, o0xffff596bc228;
+L_0xaaab658ea6a0 .arith/sub 32, L_0xaaab658ea510, o0xffff596bc228;
+L_0xaaab658ea7b0 .functor MUXZ 32, L_0xaaab658ea510, L_0xaaab658ea6a0, L_0xaaab658ea5b0, C4<>;
+L_0xaaab658ea930 .part L_0xaaab658e9ce0, 0, 31;
+L_0xaaab658ea9d0 .concat [ 1 31 0 0], L_0xffff59670f48, L_0xaaab658ea930;
+L_0xaaab658eab60 .part o0xffff596c16e8, 0, 31;
+L_0xaaab658eac00 .concat [ 1 31 0 0], L_0xffff59670f90, L_0xaaab658eab60;
+L_0xaaab658eada0 .concat [ 1 31 0 0], L_0xaaab658ea740, L_0xffff59670fd8;
+S_0xaaab658b5230 .scope generate, "stage[19]" "stage[19]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658b53e0 .param/l "i" 1 3 26, +C4<010011>;
+S_0xaaab658b54c0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658b5230;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658eb430 .functor BUFZ 1, L_0xaaab658eb2a0, C4<0>, C4<0>, C4<0>;
+L_0xaaab658ebb80 .functor OR 32, L_0xaaab658eb8f0, L_0xaaab658eba90, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658b57c0_0 .net *"_ivl_1", 30 0, L_0xaaab658eafa0;  1 drivers
+v0xaaab658b58c0_0 .net *"_ivl_16", 30 0, L_0xaaab658eb620;  1 drivers
+L_0xffff59671020 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b59a0_0 .net *"_ivl_18", 0 0, L_0xffff59671020;  1 drivers
+v0xaaab658b5a90_0 .net *"_ivl_20", 31 0, L_0xaaab658eb8f0;  1 drivers
+v0xaaab658b5b70_0 .net *"_ivl_22", 30 0, L_0xaaab658eb850;  1 drivers
+L_0xffff59671068 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b5ca0_0 .net *"_ivl_24", 0 0, L_0xffff59671068;  1 drivers
+v0xaaab658b5d80_0 .net *"_ivl_26", 31 0, L_0xaaab658eba90;  1 drivers
+L_0xffff596710b0 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b5e60_0 .net *"_ivl_29", 30 0, L_0xffff596710b0;  1 drivers
+v0xaaab658b5f40_0 .net *"_ivl_3", 0 0, L_0xaaab658eb0d0;  1 drivers
+v0xaaab658b6020_0 .net "can_subtract", 0 0, L_0xaaab658eb2a0;  1 drivers
+v0xaaab658b60e0_0 .net "i_dividend", 31 0, L_0xaaab658ea9d0;  alias, 1 drivers
+v0xaaab658b61a0_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c1b98 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658b6240_0 .net "i_quotient", 31 0, o0xffff596c1b98;  0 drivers
+v0xaaab658b6320_0 .net "i_remainder", 31 0, L_0xaaab658ea7b0;  alias, 1 drivers
+v0xaaab658b6410_0 .net "new_remainder", 31 0, L_0xaaab658eb200;  1 drivers
+v0xaaab658b64d0_0 .net "o_dividend", 31 0, L_0xaaab658eb6c0;  alias, 1 drivers
+v0xaaab658b65b0_0 .net "o_quotient", 31 0, L_0xaaab658ebb80;  1 drivers
+v0xaaab658b67a0_0 .net "o_quotient_bit", 0 0, L_0xaaab658eb430;  1 drivers
+v0xaaab658b6860_0 .net "o_remainder", 31 0, L_0xaaab658eb4a0;  alias, 1 drivers
+v0xaaab658b6940_0 .net "subtracted_remainder", 31 0, L_0xaaab658eb390;  1 drivers
+L_0xaaab658eafa0 .part L_0xaaab658ea7b0, 0, 31;
+L_0xaaab658eb0d0 .part L_0xaaab658ea9d0, 31, 1;
+L_0xaaab658eb200 .concat [ 1 31 0 0], L_0xaaab658eb0d0, L_0xaaab658eafa0;
+L_0xaaab658eb2a0 .cmp/ge 32, L_0xaaab658eb200, o0xffff596bc228;
+L_0xaaab658eb390 .arith/sub 32, L_0xaaab658eb200, o0xffff596bc228;
+L_0xaaab658eb4a0 .functor MUXZ 32, L_0xaaab658eb200, L_0xaaab658eb390, L_0xaaab658eb2a0, C4<>;
+L_0xaaab658eb620 .part L_0xaaab658ea9d0, 0, 31;
+L_0xaaab658eb6c0 .concat [ 1 31 0 0], L_0xffff59671020, L_0xaaab658eb620;
+L_0xaaab658eb850 .part o0xffff596c1b98, 0, 31;
+L_0xaaab658eb8f0 .concat [ 1 31 0 0], L_0xffff59671068, L_0xaaab658eb850;
+L_0xaaab658eba90 .concat [ 1 31 0 0], L_0xaaab658eb430, L_0xffff596710b0;
+S_0xaaab658b6b20 .scope generate, "stage[20]" "stage[20]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658b6cd0 .param/l "i" 1 3 26, +C4<010100>;
+S_0xaaab658b6db0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658b6b20;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658ec120 .functor BUFZ 1, L_0xaaab658ebf90, C4<0>, C4<0>, C4<0>;
+L_0xaaab658ec870 .functor OR 32, L_0xaaab658ec5e0, L_0xaaab658ec780, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658b70b0_0 .net *"_ivl_1", 30 0, L_0xaaab658ebc90;  1 drivers
+v0xaaab658b71b0_0 .net *"_ivl_16", 30 0, L_0xaaab658ec310;  1 drivers
+L_0xffff596710f8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b7290_0 .net *"_ivl_18", 0 0, L_0xffff596710f8;  1 drivers
+v0xaaab658b7380_0 .net *"_ivl_20", 31 0, L_0xaaab658ec5e0;  1 drivers
+v0xaaab658b7460_0 .net *"_ivl_22", 30 0, L_0xaaab658ec540;  1 drivers
+L_0xffff59671140 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b7590_0 .net *"_ivl_24", 0 0, L_0xffff59671140;  1 drivers
+v0xaaab658b7670_0 .net *"_ivl_26", 31 0, L_0xaaab658ec780;  1 drivers
+L_0xffff59671188 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b7750_0 .net *"_ivl_29", 30 0, L_0xffff59671188;  1 drivers
+v0xaaab658b7830_0 .net *"_ivl_3", 0 0, L_0xaaab658ebdc0;  1 drivers
+v0xaaab658b7910_0 .net "can_subtract", 0 0, L_0xaaab658ebf90;  1 drivers
+v0xaaab658b79d0_0 .net "i_dividend", 31 0, L_0xaaab658eb6c0;  alias, 1 drivers
+v0xaaab658b7a90_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c2048 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658b7b30_0 .net "i_quotient", 31 0, o0xffff596c2048;  0 drivers
+v0xaaab658b7c10_0 .net "i_remainder", 31 0, L_0xaaab658eb4a0;  alias, 1 drivers
+v0xaaab658b7d00_0 .net "new_remainder", 31 0, L_0xaaab658ebef0;  1 drivers
+v0xaaab658b7dc0_0 .net "o_dividend", 31 0, L_0xaaab658ec3b0;  alias, 1 drivers
+v0xaaab658b7ea0_0 .net "o_quotient", 31 0, L_0xaaab658ec870;  1 drivers
+v0xaaab658b8090_0 .net "o_quotient_bit", 0 0, L_0xaaab658ec120;  1 drivers
+v0xaaab658b8150_0 .net "o_remainder", 31 0, L_0xaaab658ec190;  alias, 1 drivers
+v0xaaab658b8230_0 .net "subtracted_remainder", 31 0, L_0xaaab658ec080;  1 drivers
+L_0xaaab658ebc90 .part L_0xaaab658eb4a0, 0, 31;
+L_0xaaab658ebdc0 .part L_0xaaab658eb6c0, 31, 1;
+L_0xaaab658ebef0 .concat [ 1 31 0 0], L_0xaaab658ebdc0, L_0xaaab658ebc90;
+L_0xaaab658ebf90 .cmp/ge 32, L_0xaaab658ebef0, o0xffff596bc228;
+L_0xaaab658ec080 .arith/sub 32, L_0xaaab658ebef0, o0xffff596bc228;
+L_0xaaab658ec190 .functor MUXZ 32, L_0xaaab658ebef0, L_0xaaab658ec080, L_0xaaab658ebf90, C4<>;
+L_0xaaab658ec310 .part L_0xaaab658eb6c0, 0, 31;
+L_0xaaab658ec3b0 .concat [ 1 31 0 0], L_0xffff596710f8, L_0xaaab658ec310;
+L_0xaaab658ec540 .part o0xffff596c2048, 0, 31;
+L_0xaaab658ec5e0 .concat [ 1 31 0 0], L_0xffff59671140, L_0xaaab658ec540;
+L_0xaaab658ec780 .concat [ 1 31 0 0], L_0xaaab658ec120, L_0xffff59671188;
+S_0xaaab658b8410 .scope generate, "stage[21]" "stage[21]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658b85c0 .param/l "i" 1 3 26, +C4<010101>;
+S_0xaaab658b86a0 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658b8410;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658ece10 .functor BUFZ 1, L_0xaaab658ecc80, C4<0>, C4<0>, C4<0>;
+L_0xaaab658ed560 .functor OR 32, L_0xaaab658ed2d0, L_0xaaab658ed470, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658b89a0_0 .net *"_ivl_1", 30 0, L_0xaaab658ec980;  1 drivers
+v0xaaab658b8aa0_0 .net *"_ivl_16", 30 0, L_0xaaab658ed000;  1 drivers
+L_0xffff596711d0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b8b80_0 .net *"_ivl_18", 0 0, L_0xffff596711d0;  1 drivers
+v0xaaab658b8c70_0 .net *"_ivl_20", 31 0, L_0xaaab658ed2d0;  1 drivers
+v0xaaab658b8d50_0 .net *"_ivl_22", 30 0, L_0xaaab658ed230;  1 drivers
+L_0xffff59671218 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b8e80_0 .net *"_ivl_24", 0 0, L_0xffff59671218;  1 drivers
+v0xaaab658b8f60_0 .net *"_ivl_26", 31 0, L_0xaaab658ed470;  1 drivers
+L_0xffff59671260 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658b9040_0 .net *"_ivl_29", 30 0, L_0xffff59671260;  1 drivers
+v0xaaab658b9120_0 .net *"_ivl_3", 0 0, L_0xaaab658ecab0;  1 drivers
+v0xaaab658b9200_0 .net "can_subtract", 0 0, L_0xaaab658ecc80;  1 drivers
+v0xaaab658b92c0_0 .net "i_dividend", 31 0, L_0xaaab658ec3b0;  alias, 1 drivers
+v0xaaab658b9380_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c24f8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658b9420_0 .net "i_quotient", 31 0, o0xffff596c24f8;  0 drivers
+v0xaaab658b9500_0 .net "i_remainder", 31 0, L_0xaaab658ec190;  alias, 1 drivers
+v0xaaab658b95f0_0 .net "new_remainder", 31 0, L_0xaaab658ecbe0;  1 drivers
+v0xaaab658b96b0_0 .net "o_dividend", 31 0, L_0xaaab658ed0a0;  alias, 1 drivers
+v0xaaab658b9790_0 .net "o_quotient", 31 0, L_0xaaab658ed560;  1 drivers
+v0xaaab658b9980_0 .net "o_quotient_bit", 0 0, L_0xaaab658ece10;  1 drivers
+v0xaaab658b9a40_0 .net "o_remainder", 31 0, L_0xaaab658ece80;  alias, 1 drivers
+v0xaaab658b9b20_0 .net "subtracted_remainder", 31 0, L_0xaaab658ecd70;  1 drivers
+L_0xaaab658ec980 .part L_0xaaab658ec190, 0, 31;
+L_0xaaab658ecab0 .part L_0xaaab658ec3b0, 31, 1;
+L_0xaaab658ecbe0 .concat [ 1 31 0 0], L_0xaaab658ecab0, L_0xaaab658ec980;
+L_0xaaab658ecc80 .cmp/ge 32, L_0xaaab658ecbe0, o0xffff596bc228;
+L_0xaaab658ecd70 .arith/sub 32, L_0xaaab658ecbe0, o0xffff596bc228;
+L_0xaaab658ece80 .functor MUXZ 32, L_0xaaab658ecbe0, L_0xaaab658ecd70, L_0xaaab658ecc80, C4<>;
+L_0xaaab658ed000 .part L_0xaaab658ec3b0, 0, 31;
+L_0xaaab658ed0a0 .concat [ 1 31 0 0], L_0xffff596711d0, L_0xaaab658ed000;
+L_0xaaab658ed230 .part o0xffff596c24f8, 0, 31;
+L_0xaaab658ed2d0 .concat [ 1 31 0 0], L_0xffff59671218, L_0xaaab658ed230;
+L_0xaaab658ed470 .concat [ 1 31 0 0], L_0xaaab658ece10, L_0xffff59671260;
+S_0xaaab658b9d00 .scope generate, "stage[22]" "stage[22]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658b9eb0 .param/l "i" 1 3 26, +C4<010110>;
+S_0xaaab658b9f90 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658b9d00;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658edb00 .functor BUFZ 1, L_0xaaab658ed970, C4<0>, C4<0>, C4<0>;
+L_0xaaab658ee250 .functor OR 32, L_0xaaab658edfc0, L_0xaaab658ee160, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658ba290_0 .net *"_ivl_1", 30 0, L_0xaaab658ed670;  1 drivers
+v0xaaab658ba390_0 .net *"_ivl_16", 30 0, L_0xaaab658edcf0;  1 drivers
+L_0xffff596712a8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658ba470_0 .net *"_ivl_18", 0 0, L_0xffff596712a8;  1 drivers
+v0xaaab658ba560_0 .net *"_ivl_20", 31 0, L_0xaaab658edfc0;  1 drivers
+v0xaaab658ba640_0 .net *"_ivl_22", 30 0, L_0xaaab658edf20;  1 drivers
+L_0xffff596712f0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658ba770_0 .net *"_ivl_24", 0 0, L_0xffff596712f0;  1 drivers
+v0xaaab658ba850_0 .net *"_ivl_26", 31 0, L_0xaaab658ee160;  1 drivers
+L_0xffff59671338 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658ba930_0 .net *"_ivl_29", 30 0, L_0xffff59671338;  1 drivers
+v0xaaab658baa10_0 .net *"_ivl_3", 0 0, L_0xaaab658ed7a0;  1 drivers
+v0xaaab658baaf0_0 .net "can_subtract", 0 0, L_0xaaab658ed970;  1 drivers
+v0xaaab658babb0_0 .net "i_dividend", 31 0, L_0xaaab658ed0a0;  alias, 1 drivers
+v0xaaab658bac70_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c29a8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658bad10_0 .net "i_quotient", 31 0, o0xffff596c29a8;  0 drivers
+v0xaaab658badf0_0 .net "i_remainder", 31 0, L_0xaaab658ece80;  alias, 1 drivers
+v0xaaab658baee0_0 .net "new_remainder", 31 0, L_0xaaab658ed8d0;  1 drivers
+v0xaaab658bafa0_0 .net "o_dividend", 31 0, L_0xaaab658edd90;  alias, 1 drivers
+v0xaaab658bb080_0 .net "o_quotient", 31 0, L_0xaaab658ee250;  1 drivers
+v0xaaab658bb270_0 .net "o_quotient_bit", 0 0, L_0xaaab658edb00;  1 drivers
+v0xaaab658bb330_0 .net "o_remainder", 31 0, L_0xaaab658edb70;  alias, 1 drivers
+v0xaaab658bb410_0 .net "subtracted_remainder", 31 0, L_0xaaab658eda60;  1 drivers
+L_0xaaab658ed670 .part L_0xaaab658ece80, 0, 31;
+L_0xaaab658ed7a0 .part L_0xaaab658ed0a0, 31, 1;
+L_0xaaab658ed8d0 .concat [ 1 31 0 0], L_0xaaab658ed7a0, L_0xaaab658ed670;
+L_0xaaab658ed970 .cmp/ge 32, L_0xaaab658ed8d0, o0xffff596bc228;
+L_0xaaab658eda60 .arith/sub 32, L_0xaaab658ed8d0, o0xffff596bc228;
+L_0xaaab658edb70 .functor MUXZ 32, L_0xaaab658ed8d0, L_0xaaab658eda60, L_0xaaab658ed970, C4<>;
+L_0xaaab658edcf0 .part L_0xaaab658ed0a0, 0, 31;
+L_0xaaab658edd90 .concat [ 1 31 0 0], L_0xffff596712a8, L_0xaaab658edcf0;
+L_0xaaab658edf20 .part o0xffff596c29a8, 0, 31;
+L_0xaaab658edfc0 .concat [ 1 31 0 0], L_0xffff596712f0, L_0xaaab658edf20;
+L_0xaaab658ee160 .concat [ 1 31 0 0], L_0xaaab658edb00, L_0xffff59671338;
+S_0xaaab658bb5f0 .scope generate, "stage[23]" "stage[23]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658bb7a0 .param/l "i" 1 3 26, +C4<010111>;
+S_0xaaab658bb880 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658bb5f0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658ee7f0 .functor BUFZ 1, L_0xaaab658ee660, C4<0>, C4<0>, C4<0>;
+L_0xaaab658eef40 .functor OR 32, L_0xaaab658eecb0, L_0xaaab658eee50, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658bbb80_0 .net *"_ivl_1", 30 0, L_0xaaab658ee360;  1 drivers
+v0xaaab658bbc80_0 .net *"_ivl_16", 30 0, L_0xaaab658ee9e0;  1 drivers
+L_0xffff59671380 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658bbd60_0 .net *"_ivl_18", 0 0, L_0xffff59671380;  1 drivers
+v0xaaab658bbe50_0 .net *"_ivl_20", 31 0, L_0xaaab658eecb0;  1 drivers
+v0xaaab658bbf30_0 .net *"_ivl_22", 30 0, L_0xaaab658eec10;  1 drivers
+L_0xffff596713c8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658bc060_0 .net *"_ivl_24", 0 0, L_0xffff596713c8;  1 drivers
+v0xaaab658bc140_0 .net *"_ivl_26", 31 0, L_0xaaab658eee50;  1 drivers
+L_0xffff59671410 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658bc220_0 .net *"_ivl_29", 30 0, L_0xffff59671410;  1 drivers
+v0xaaab658bc300_0 .net *"_ivl_3", 0 0, L_0xaaab658ee490;  1 drivers
+v0xaaab658bc3e0_0 .net "can_subtract", 0 0, L_0xaaab658ee660;  1 drivers
+v0xaaab658bc4a0_0 .net "i_dividend", 31 0, L_0xaaab658edd90;  alias, 1 drivers
+v0xaaab658bc560_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c2e58 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658bc600_0 .net "i_quotient", 31 0, o0xffff596c2e58;  0 drivers
+v0xaaab658bc6e0_0 .net "i_remainder", 31 0, L_0xaaab658edb70;  alias, 1 drivers
+v0xaaab658bc7d0_0 .net "new_remainder", 31 0, L_0xaaab658ee5c0;  1 drivers
+v0xaaab658bc890_0 .net "o_dividend", 31 0, L_0xaaab658eea80;  alias, 1 drivers
+v0xaaab658bc970_0 .net "o_quotient", 31 0, L_0xaaab658eef40;  1 drivers
+v0xaaab658bcb60_0 .net "o_quotient_bit", 0 0, L_0xaaab658ee7f0;  1 drivers
+v0xaaab658bcc20_0 .net "o_remainder", 31 0, L_0xaaab658ee860;  alias, 1 drivers
+v0xaaab658bcd00_0 .net "subtracted_remainder", 31 0, L_0xaaab658ee750;  1 drivers
+L_0xaaab658ee360 .part L_0xaaab658edb70, 0, 31;
+L_0xaaab658ee490 .part L_0xaaab658edd90, 31, 1;
+L_0xaaab658ee5c0 .concat [ 1 31 0 0], L_0xaaab658ee490, L_0xaaab658ee360;
+L_0xaaab658ee660 .cmp/ge 32, L_0xaaab658ee5c0, o0xffff596bc228;
+L_0xaaab658ee750 .arith/sub 32, L_0xaaab658ee5c0, o0xffff596bc228;
+L_0xaaab658ee860 .functor MUXZ 32, L_0xaaab658ee5c0, L_0xaaab658ee750, L_0xaaab658ee660, C4<>;
+L_0xaaab658ee9e0 .part L_0xaaab658edd90, 0, 31;
+L_0xaaab658eea80 .concat [ 1 31 0 0], L_0xffff59671380, L_0xaaab658ee9e0;
+L_0xaaab658eec10 .part o0xffff596c2e58, 0, 31;
+L_0xaaab658eecb0 .concat [ 1 31 0 0], L_0xffff596713c8, L_0xaaab658eec10;
+L_0xaaab658eee50 .concat [ 1 31 0 0], L_0xaaab658ee7f0, L_0xffff59671410;
+S_0xaaab658bcee0 .scope generate, "stage[24]" "stage[24]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658bd090 .param/l "i" 1 3 26, +C4<011000>;
+S_0xaaab658bd170 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658bcee0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658ef4e0 .functor BUFZ 1, L_0xaaab658ef350, C4<0>, C4<0>, C4<0>;
+L_0xaaab658efc30 .functor OR 32, L_0xaaab658ef9a0, L_0xaaab658efb40, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658bd470_0 .net *"_ivl_1", 30 0, L_0xaaab658ef050;  1 drivers
+v0xaaab658bd570_0 .net *"_ivl_16", 30 0, L_0xaaab658ef6d0;  1 drivers
+L_0xffff59671458 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658bd650_0 .net *"_ivl_18", 0 0, L_0xffff59671458;  1 drivers
+v0xaaab658bd740_0 .net *"_ivl_20", 31 0, L_0xaaab658ef9a0;  1 drivers
+v0xaaab658bd820_0 .net *"_ivl_22", 30 0, L_0xaaab658ef900;  1 drivers
+L_0xffff596714a0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658bd950_0 .net *"_ivl_24", 0 0, L_0xffff596714a0;  1 drivers
+v0xaaab658bda30_0 .net *"_ivl_26", 31 0, L_0xaaab658efb40;  1 drivers
+L_0xffff596714e8 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658bdb10_0 .net *"_ivl_29", 30 0, L_0xffff596714e8;  1 drivers
+v0xaaab658bdbf0_0 .net *"_ivl_3", 0 0, L_0xaaab658ef180;  1 drivers
+v0xaaab658bdcd0_0 .net "can_subtract", 0 0, L_0xaaab658ef350;  1 drivers
+v0xaaab658bdd90_0 .net "i_dividend", 31 0, L_0xaaab658eea80;  alias, 1 drivers
+v0xaaab658bde50_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c3308 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658bdef0_0 .net "i_quotient", 31 0, o0xffff596c3308;  0 drivers
+v0xaaab658bdfd0_0 .net "i_remainder", 31 0, L_0xaaab658ee860;  alias, 1 drivers
+v0xaaab658be0c0_0 .net "new_remainder", 31 0, L_0xaaab658ef2b0;  1 drivers
+v0xaaab658be180_0 .net "o_dividend", 31 0, L_0xaaab658ef770;  alias, 1 drivers
+v0xaaab658be260_0 .net "o_quotient", 31 0, L_0xaaab658efc30;  1 drivers
+v0xaaab658be450_0 .net "o_quotient_bit", 0 0, L_0xaaab658ef4e0;  1 drivers
+v0xaaab658be510_0 .net "o_remainder", 31 0, L_0xaaab658ef550;  alias, 1 drivers
+v0xaaab658be5f0_0 .net "subtracted_remainder", 31 0, L_0xaaab658ef440;  1 drivers
+L_0xaaab658ef050 .part L_0xaaab658ee860, 0, 31;
+L_0xaaab658ef180 .part L_0xaaab658eea80, 31, 1;
+L_0xaaab658ef2b0 .concat [ 1 31 0 0], L_0xaaab658ef180, L_0xaaab658ef050;
+L_0xaaab658ef350 .cmp/ge 32, L_0xaaab658ef2b0, o0xffff596bc228;
+L_0xaaab658ef440 .arith/sub 32, L_0xaaab658ef2b0, o0xffff596bc228;
+L_0xaaab658ef550 .functor MUXZ 32, L_0xaaab658ef2b0, L_0xaaab658ef440, L_0xaaab658ef350, C4<>;
+L_0xaaab658ef6d0 .part L_0xaaab658eea80, 0, 31;
+L_0xaaab658ef770 .concat [ 1 31 0 0], L_0xffff59671458, L_0xaaab658ef6d0;
+L_0xaaab658ef900 .part o0xffff596c3308, 0, 31;
+L_0xaaab658ef9a0 .concat [ 1 31 0 0], L_0xffff596714a0, L_0xaaab658ef900;
+L_0xaaab658efb40 .concat [ 1 31 0 0], L_0xaaab658ef4e0, L_0xffff596714e8;
+S_0xaaab658be7d0 .scope generate, "stage[25]" "stage[25]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658be980 .param/l "i" 1 3 26, +C4<011001>;
+S_0xaaab658bea60 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658be7d0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658f0200 .functor BUFZ 1, L_0xaaab658f0040, C4<0>, C4<0>, C4<0>;
+L_0xaaab658f0950 .functor OR 32, L_0xaaab658f06c0, L_0xaaab658f0860, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658bed60_0 .net *"_ivl_1", 30 0, L_0xaaab658efd40;  1 drivers
+v0xaaab658bee60_0 .net *"_ivl_16", 30 0, L_0xaaab658f03f0;  1 drivers
+L_0xffff59671530 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658bef40_0 .net *"_ivl_18", 0 0, L_0xffff59671530;  1 drivers
+v0xaaab658bf030_0 .net *"_ivl_20", 31 0, L_0xaaab658f06c0;  1 drivers
+v0xaaab658bf110_0 .net *"_ivl_22", 30 0, L_0xaaab658f0620;  1 drivers
+L_0xffff59671578 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658bf240_0 .net *"_ivl_24", 0 0, L_0xffff59671578;  1 drivers
+v0xaaab658bf320_0 .net *"_ivl_26", 31 0, L_0xaaab658f0860;  1 drivers
+L_0xffff596715c0 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658bf400_0 .net *"_ivl_29", 30 0, L_0xffff596715c0;  1 drivers
+v0xaaab658bf4e0_0 .net *"_ivl_3", 0 0, L_0xaaab658efe70;  1 drivers
+v0xaaab658bf5c0_0 .net "can_subtract", 0 0, L_0xaaab658f0040;  1 drivers
+v0xaaab658bf680_0 .net "i_dividend", 31 0, L_0xaaab658ef770;  alias, 1 drivers
+v0xaaab658bf740_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c37b8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658bf7e0_0 .net "i_quotient", 31 0, o0xffff596c37b8;  0 drivers
+v0xaaab658bf8c0_0 .net "i_remainder", 31 0, L_0xaaab658ef550;  alias, 1 drivers
+v0xaaab658bf9b0_0 .net "new_remainder", 31 0, L_0xaaab658effa0;  1 drivers
+v0xaaab658bfa70_0 .net "o_dividend", 31 0, L_0xaaab658f0490;  alias, 1 drivers
+v0xaaab658bfb50_0 .net "o_quotient", 31 0, L_0xaaab658f0950;  1 drivers
+v0xaaab658bfd40_0 .net "o_quotient_bit", 0 0, L_0xaaab658f0200;  1 drivers
+v0xaaab658bfe00_0 .net "o_remainder", 31 0, L_0xaaab658f0270;  alias, 1 drivers
+v0xaaab658bfee0_0 .net "subtracted_remainder", 31 0, L_0xaaab658f0160;  1 drivers
+L_0xaaab658efd40 .part L_0xaaab658ef550, 0, 31;
+L_0xaaab658efe70 .part L_0xaaab658ef770, 31, 1;
+L_0xaaab658effa0 .concat [ 1 31 0 0], L_0xaaab658efe70, L_0xaaab658efd40;
+L_0xaaab658f0040 .cmp/ge 32, L_0xaaab658effa0, o0xffff596bc228;
+L_0xaaab658f0160 .arith/sub 32, L_0xaaab658effa0, o0xffff596bc228;
+L_0xaaab658f0270 .functor MUXZ 32, L_0xaaab658effa0, L_0xaaab658f0160, L_0xaaab658f0040, C4<>;
+L_0xaaab658f03f0 .part L_0xaaab658ef770, 0, 31;
+L_0xaaab658f0490 .concat [ 1 31 0 0], L_0xffff59671530, L_0xaaab658f03f0;
+L_0xaaab658f0620 .part o0xffff596c37b8, 0, 31;
+L_0xaaab658f06c0 .concat [ 1 31 0 0], L_0xffff59671578, L_0xaaab658f0620;
+L_0xaaab658f0860 .concat [ 1 31 0 0], L_0xaaab658f0200, L_0xffff596715c0;
+S_0xaaab658c00c0 .scope generate, "stage[26]" "stage[26]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658c0270 .param/l "i" 1 3 26, +C4<011010>;
+S_0xaaab658c0350 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658c00c0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658f0f20 .functor BUFZ 1, L_0xaaab658f0d60, C4<0>, C4<0>, C4<0>;
+L_0xaaab658f1670 .functor OR 32, L_0xaaab658f13e0, L_0xaaab658f1580, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658c0650_0 .net *"_ivl_1", 30 0, L_0xaaab658f0a60;  1 drivers
+v0xaaab658c0750_0 .net *"_ivl_16", 30 0, L_0xaaab658f1110;  1 drivers
+L_0xffff59671608 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c0830_0 .net *"_ivl_18", 0 0, L_0xffff59671608;  1 drivers
+v0xaaab658c0920_0 .net *"_ivl_20", 31 0, L_0xaaab658f13e0;  1 drivers
+v0xaaab658c0a00_0 .net *"_ivl_22", 30 0, L_0xaaab658f1340;  1 drivers
+L_0xffff59671650 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c0b30_0 .net *"_ivl_24", 0 0, L_0xffff59671650;  1 drivers
+v0xaaab658c0c10_0 .net *"_ivl_26", 31 0, L_0xaaab658f1580;  1 drivers
+L_0xffff59671698 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c0cf0_0 .net *"_ivl_29", 30 0, L_0xffff59671698;  1 drivers
+v0xaaab658c0dd0_0 .net *"_ivl_3", 0 0, L_0xaaab658f0b90;  1 drivers
+v0xaaab658c0eb0_0 .net "can_subtract", 0 0, L_0xaaab658f0d60;  1 drivers
+v0xaaab658c0f70_0 .net "i_dividend", 31 0, L_0xaaab658f0490;  alias, 1 drivers
+v0xaaab658c1030_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c3c68 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658c10d0_0 .net "i_quotient", 31 0, o0xffff596c3c68;  0 drivers
+v0xaaab658c11b0_0 .net "i_remainder", 31 0, L_0xaaab658f0270;  alias, 1 drivers
+v0xaaab658c12a0_0 .net "new_remainder", 31 0, L_0xaaab658f0cc0;  1 drivers
+v0xaaab658c1360_0 .net "o_dividend", 31 0, L_0xaaab658f11b0;  alias, 1 drivers
+v0xaaab658c1440_0 .net "o_quotient", 31 0, L_0xaaab658f1670;  1 drivers
+v0xaaab658c1630_0 .net "o_quotient_bit", 0 0, L_0xaaab658f0f20;  1 drivers
+v0xaaab658c16f0_0 .net "o_remainder", 31 0, L_0xaaab658f0f90;  alias, 1 drivers
+v0xaaab658c17d0_0 .net "subtracted_remainder", 31 0, L_0xaaab658f0e80;  1 drivers
+L_0xaaab658f0a60 .part L_0xaaab658f0270, 0, 31;
+L_0xaaab658f0b90 .part L_0xaaab658f0490, 31, 1;
+L_0xaaab658f0cc0 .concat [ 1 31 0 0], L_0xaaab658f0b90, L_0xaaab658f0a60;
+L_0xaaab658f0d60 .cmp/ge 32, L_0xaaab658f0cc0, o0xffff596bc228;
+L_0xaaab658f0e80 .arith/sub 32, L_0xaaab658f0cc0, o0xffff596bc228;
+L_0xaaab658f0f90 .functor MUXZ 32, L_0xaaab658f0cc0, L_0xaaab658f0e80, L_0xaaab658f0d60, C4<>;
+L_0xaaab658f1110 .part L_0xaaab658f0490, 0, 31;
+L_0xaaab658f11b0 .concat [ 1 31 0 0], L_0xffff59671608, L_0xaaab658f1110;
+L_0xaaab658f1340 .part o0xffff596c3c68, 0, 31;
+L_0xaaab658f13e0 .concat [ 1 31 0 0], L_0xffff59671650, L_0xaaab658f1340;
+L_0xaaab658f1580 .concat [ 1 31 0 0], L_0xaaab658f0f20, L_0xffff59671698;
+S_0xaaab658c19b0 .scope generate, "stage[27]" "stage[27]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658c1b60 .param/l "i" 1 3 26, +C4<011011>;
+S_0xaaab658c1c40 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658c19b0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658f1c40 .functor BUFZ 1, L_0xaaab658f1a80, C4<0>, C4<0>, C4<0>;
+L_0xaaab658f23c0 .functor OR 32, L_0xaaab658f2100, L_0xaaab658f22d0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658c1f40_0 .net *"_ivl_1", 30 0, L_0xaaab658f1780;  1 drivers
+v0xaaab658c2040_0 .net *"_ivl_16", 30 0, L_0xaaab658f1e30;  1 drivers
+L_0xffff596716e0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c2120_0 .net *"_ivl_18", 0 0, L_0xffff596716e0;  1 drivers
+v0xaaab658c2210_0 .net *"_ivl_20", 31 0, L_0xaaab658f2100;  1 drivers
+v0xaaab658c22f0_0 .net *"_ivl_22", 30 0, L_0xaaab658f2060;  1 drivers
+L_0xffff59671728 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c2420_0 .net *"_ivl_24", 0 0, L_0xffff59671728;  1 drivers
+v0xaaab658c2500_0 .net *"_ivl_26", 31 0, L_0xaaab658f22d0;  1 drivers
+L_0xffff59671770 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c25e0_0 .net *"_ivl_29", 30 0, L_0xffff59671770;  1 drivers
+v0xaaab658c26c0_0 .net *"_ivl_3", 0 0, L_0xaaab658f18b0;  1 drivers
+v0xaaab658c27a0_0 .net "can_subtract", 0 0, L_0xaaab658f1a80;  1 drivers
+v0xaaab658c2860_0 .net "i_dividend", 31 0, L_0xaaab658f11b0;  alias, 1 drivers
+v0xaaab658c2920_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c4118 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658c29c0_0 .net "i_quotient", 31 0, o0xffff596c4118;  0 drivers
+v0xaaab658c2aa0_0 .net "i_remainder", 31 0, L_0xaaab658f0f90;  alias, 1 drivers
+v0xaaab658c2b90_0 .net "new_remainder", 31 0, L_0xaaab658f19e0;  1 drivers
+v0xaaab658c2c50_0 .net "o_dividend", 31 0, L_0xaaab658f1ed0;  alias, 1 drivers
+v0xaaab658c2d30_0 .net "o_quotient", 31 0, L_0xaaab658f23c0;  1 drivers
+v0xaaab658c2f20_0 .net "o_quotient_bit", 0 0, L_0xaaab658f1c40;  1 drivers
+v0xaaab658c2fe0_0 .net "o_remainder", 31 0, L_0xaaab658f1cb0;  alias, 1 drivers
+v0xaaab658c30c0_0 .net "subtracted_remainder", 31 0, L_0xaaab658f1ba0;  1 drivers
+L_0xaaab658f1780 .part L_0xaaab658f0f90, 0, 31;
+L_0xaaab658f18b0 .part L_0xaaab658f11b0, 31, 1;
+L_0xaaab658f19e0 .concat [ 1 31 0 0], L_0xaaab658f18b0, L_0xaaab658f1780;
+L_0xaaab658f1a80 .cmp/ge 32, L_0xaaab658f19e0, o0xffff596bc228;
+L_0xaaab658f1ba0 .arith/sub 32, L_0xaaab658f19e0, o0xffff596bc228;
+L_0xaaab658f1cb0 .functor MUXZ 32, L_0xaaab658f19e0, L_0xaaab658f1ba0, L_0xaaab658f1a80, C4<>;
+L_0xaaab658f1e30 .part L_0xaaab658f11b0, 0, 31;
+L_0xaaab658f1ed0 .concat [ 1 31 0 0], L_0xffff596716e0, L_0xaaab658f1e30;
+L_0xaaab658f2060 .part o0xffff596c4118, 0, 31;
+L_0xaaab658f2100 .concat [ 1 31 0 0], L_0xffff59671728, L_0xaaab658f2060;
+L_0xaaab658f22d0 .concat [ 1 31 0 0], L_0xaaab658f1c40, L_0xffff59671770;
+S_0xaaab658c32a0 .scope generate, "stage[28]" "stage[28]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658c3450 .param/l "i" 1 3 26, +C4<011100>;
+S_0xaaab658c3530 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658c32a0;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658f2990 .functor BUFZ 1, L_0xaaab658f27d0, C4<0>, C4<0>, C4<0>;
+L_0xaaab658f3110 .functor OR 32, L_0xaaab658f2e50, L_0xaaab658f3020, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658c3830_0 .net *"_ivl_1", 30 0, L_0xaaab658f24d0;  1 drivers
+v0xaaab658c3930_0 .net *"_ivl_16", 30 0, L_0xaaab658f2b80;  1 drivers
+L_0xffff596717b8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c3a10_0 .net *"_ivl_18", 0 0, L_0xffff596717b8;  1 drivers
+v0xaaab658c3b00_0 .net *"_ivl_20", 31 0, L_0xaaab658f2e50;  1 drivers
+v0xaaab658c3be0_0 .net *"_ivl_22", 30 0, L_0xaaab658f2db0;  1 drivers
+L_0xffff59671800 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c3d10_0 .net *"_ivl_24", 0 0, L_0xffff59671800;  1 drivers
+v0xaaab658c3df0_0 .net *"_ivl_26", 31 0, L_0xaaab658f3020;  1 drivers
+L_0xffff59671848 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c3ed0_0 .net *"_ivl_29", 30 0, L_0xffff59671848;  1 drivers
+v0xaaab658c3fb0_0 .net *"_ivl_3", 0 0, L_0xaaab658f2600;  1 drivers
+v0xaaab658c4090_0 .net "can_subtract", 0 0, L_0xaaab658f27d0;  1 drivers
+v0xaaab658c4150_0 .net "i_dividend", 31 0, L_0xaaab658f1ed0;  alias, 1 drivers
+v0xaaab658c4210_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c45c8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658c42b0_0 .net "i_quotient", 31 0, o0xffff596c45c8;  0 drivers
+v0xaaab658c4390_0 .net "i_remainder", 31 0, L_0xaaab658f1cb0;  alias, 1 drivers
+v0xaaab658c4480_0 .net "new_remainder", 31 0, L_0xaaab658f2730;  1 drivers
+v0xaaab658c4540_0 .net "o_dividend", 31 0, L_0xaaab658f2c20;  alias, 1 drivers
+v0xaaab658c4620_0 .net "o_quotient", 31 0, L_0xaaab658f3110;  1 drivers
+v0xaaab658c4810_0 .net "o_quotient_bit", 0 0, L_0xaaab658f2990;  1 drivers
+v0xaaab658c48d0_0 .net "o_remainder", 31 0, L_0xaaab658f2a00;  alias, 1 drivers
+v0xaaab658c49b0_0 .net "subtracted_remainder", 31 0, L_0xaaab658f28f0;  1 drivers
+L_0xaaab658f24d0 .part L_0xaaab658f1cb0, 0, 31;
+L_0xaaab658f2600 .part L_0xaaab658f1ed0, 31, 1;
+L_0xaaab658f2730 .concat [ 1 31 0 0], L_0xaaab658f2600, L_0xaaab658f24d0;
+L_0xaaab658f27d0 .cmp/ge 32, L_0xaaab658f2730, o0xffff596bc228;
+L_0xaaab658f28f0 .arith/sub 32, L_0xaaab658f2730, o0xffff596bc228;
+L_0xaaab658f2a00 .functor MUXZ 32, L_0xaaab658f2730, L_0xaaab658f28f0, L_0xaaab658f27d0, C4<>;
+L_0xaaab658f2b80 .part L_0xaaab658f1ed0, 0, 31;
+L_0xaaab658f2c20 .concat [ 1 31 0 0], L_0xffff596717b8, L_0xaaab658f2b80;
+L_0xaaab658f2db0 .part o0xffff596c45c8, 0, 31;
+L_0xaaab658f2e50 .concat [ 1 31 0 0], L_0xffff59671800, L_0xaaab658f2db0;
+L_0xaaab658f3020 .concat [ 1 31 0 0], L_0xaaab658f2990, L_0xffff59671848;
+S_0xaaab658c4b90 .scope generate, "stage[29]" "stage[29]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658c4d40 .param/l "i" 1 3 26, +C4<011101>;
+S_0xaaab658c4e20 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658c4b90;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658f36e0 .functor BUFZ 1, L_0xaaab658f3520, C4<0>, C4<0>, C4<0>;
+L_0xaaab658f3e60 .functor OR 32, L_0xaaab658f3ba0, L_0xaaab658f3d70, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658c5120_0 .net *"_ivl_1", 30 0, L_0xaaab658f3220;  1 drivers
+v0xaaab658c5220_0 .net *"_ivl_16", 30 0, L_0xaaab658f38d0;  1 drivers
+L_0xffff59671890 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c5300_0 .net *"_ivl_18", 0 0, L_0xffff59671890;  1 drivers
+v0xaaab658c53f0_0 .net *"_ivl_20", 31 0, L_0xaaab658f3ba0;  1 drivers
+v0xaaab658c54d0_0 .net *"_ivl_22", 30 0, L_0xaaab658f3b00;  1 drivers
+L_0xffff596718d8 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c5600_0 .net *"_ivl_24", 0 0, L_0xffff596718d8;  1 drivers
+v0xaaab658c56e0_0 .net *"_ivl_26", 31 0, L_0xaaab658f3d70;  1 drivers
+L_0xffff59671920 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c57c0_0 .net *"_ivl_29", 30 0, L_0xffff59671920;  1 drivers
+v0xaaab658c58a0_0 .net *"_ivl_3", 0 0, L_0xaaab658f3350;  1 drivers
+v0xaaab658c5980_0 .net "can_subtract", 0 0, L_0xaaab658f3520;  1 drivers
+v0xaaab658c5a40_0 .net "i_dividend", 31 0, L_0xaaab658f2c20;  alias, 1 drivers
+v0xaaab658c5b00_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c4a78 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658c5ba0_0 .net "i_quotient", 31 0, o0xffff596c4a78;  0 drivers
+v0xaaab658c5c80_0 .net "i_remainder", 31 0, L_0xaaab658f2a00;  alias, 1 drivers
+v0xaaab658c5d70_0 .net "new_remainder", 31 0, L_0xaaab658f3480;  1 drivers
+v0xaaab658c5e30_0 .net "o_dividend", 31 0, L_0xaaab658f3970;  alias, 1 drivers
+v0xaaab658c5f10_0 .net "o_quotient", 31 0, L_0xaaab658f3e60;  1 drivers
+v0xaaab658c6100_0 .net "o_quotient_bit", 0 0, L_0xaaab658f36e0;  1 drivers
+v0xaaab658c61c0_0 .net "o_remainder", 31 0, L_0xaaab658f3750;  alias, 1 drivers
+v0xaaab658c62a0_0 .net "subtracted_remainder", 31 0, L_0xaaab658f3640;  1 drivers
+L_0xaaab658f3220 .part L_0xaaab658f2a00, 0, 31;
+L_0xaaab658f3350 .part L_0xaaab658f2c20, 31, 1;
+L_0xaaab658f3480 .concat [ 1 31 0 0], L_0xaaab658f3350, L_0xaaab658f3220;
+L_0xaaab658f3520 .cmp/ge 32, L_0xaaab658f3480, o0xffff596bc228;
+L_0xaaab658f3640 .arith/sub 32, L_0xaaab658f3480, o0xffff596bc228;
+L_0xaaab658f3750 .functor MUXZ 32, L_0xaaab658f3480, L_0xaaab658f3640, L_0xaaab658f3520, C4<>;
+L_0xaaab658f38d0 .part L_0xaaab658f2c20, 0, 31;
+L_0xaaab658f3970 .concat [ 1 31 0 0], L_0xffff59671890, L_0xaaab658f38d0;
+L_0xaaab658f3b00 .part o0xffff596c4a78, 0, 31;
+L_0xaaab658f3ba0 .concat [ 1 31 0 0], L_0xffff596718d8, L_0xaaab658f3b00;
+L_0xaaab658f3d70 .concat [ 1 31 0 0], L_0xaaab658f36e0, L_0xffff59671920;
+S_0xaaab658c6480 .scope generate, "stage[30]" "stage[30]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658c6630 .param/l "i" 1 3 26, +C4<011110>;
+S_0xaaab658c6710 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658c6480;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658f4430 .functor BUFZ 1, L_0xaaab658f4270, C4<0>, C4<0>, C4<0>;
+L_0xaaab658f4bb0 .functor OR 32, L_0xaaab658f48f0, L_0xaaab658f4ac0, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658c6a10_0 .net *"_ivl_1", 30 0, L_0xaaab658f3f70;  1 drivers
+v0xaaab658c6b10_0 .net *"_ivl_16", 30 0, L_0xaaab658f4620;  1 drivers
+L_0xffff59671968 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c6bf0_0 .net *"_ivl_18", 0 0, L_0xffff59671968;  1 drivers
+v0xaaab658c6ce0_0 .net *"_ivl_20", 31 0, L_0xaaab658f48f0;  1 drivers
+v0xaaab658c6dc0_0 .net *"_ivl_22", 30 0, L_0xaaab658f4850;  1 drivers
+L_0xffff596719b0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c6ef0_0 .net *"_ivl_24", 0 0, L_0xffff596719b0;  1 drivers
+v0xaaab658c6fd0_0 .net *"_ivl_26", 31 0, L_0xaaab658f4ac0;  1 drivers
+L_0xffff596719f8 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c70b0_0 .net *"_ivl_29", 30 0, L_0xffff596719f8;  1 drivers
+v0xaaab658c7190_0 .net *"_ivl_3", 0 0, L_0xaaab658f40a0;  1 drivers
+v0xaaab658c7270_0 .net "can_subtract", 0 0, L_0xaaab658f4270;  1 drivers
+v0xaaab658c7330_0 .net "i_dividend", 31 0, L_0xaaab658f3970;  alias, 1 drivers
+v0xaaab658c73f0_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c4f28 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658c7490_0 .net "i_quotient", 31 0, o0xffff596c4f28;  0 drivers
+v0xaaab658c7570_0 .net "i_remainder", 31 0, L_0xaaab658f3750;  alias, 1 drivers
+v0xaaab658c7660_0 .net "new_remainder", 31 0, L_0xaaab658f41d0;  1 drivers
+v0xaaab658c7720_0 .net "o_dividend", 31 0, L_0xaaab658f46c0;  alias, 1 drivers
+v0xaaab658c7800_0 .net "o_quotient", 31 0, L_0xaaab658f4bb0;  1 drivers
+v0xaaab658c79f0_0 .net "o_quotient_bit", 0 0, L_0xaaab658f4430;  1 drivers
+v0xaaab658c7ab0_0 .net "o_remainder", 31 0, L_0xaaab658f44a0;  alias, 1 drivers
+v0xaaab658c7b90_0 .net "subtracted_remainder", 31 0, L_0xaaab658f4390;  1 drivers
+L_0xaaab658f3f70 .part L_0xaaab658f3750, 0, 31;
+L_0xaaab658f40a0 .part L_0xaaab658f3970, 31, 1;
+L_0xaaab658f41d0 .concat [ 1 31 0 0], L_0xaaab658f40a0, L_0xaaab658f3f70;
+L_0xaaab658f4270 .cmp/ge 32, L_0xaaab658f41d0, o0xffff596bc228;
+L_0xaaab658f4390 .arith/sub 32, L_0xaaab658f41d0, o0xffff596bc228;
+L_0xaaab658f44a0 .functor MUXZ 32, L_0xaaab658f41d0, L_0xaaab658f4390, L_0xaaab658f4270, C4<>;
+L_0xaaab658f4620 .part L_0xaaab658f3970, 0, 31;
+L_0xaaab658f46c0 .concat [ 1 31 0 0], L_0xffff59671968, L_0xaaab658f4620;
+L_0xaaab658f4850 .part o0xffff596c4f28, 0, 31;
+L_0xaaab658f48f0 .concat [ 1 31 0 0], L_0xffff596719b0, L_0xaaab658f4850;
+L_0xaaab658f4ac0 .concat [ 1 31 0 0], L_0xaaab658f4430, L_0xffff596719f8;
+S_0xaaab658c7d70 .scope generate, "stage[31]" "stage[31]" 3 26, 3 26 0, S_0xaaab6587bc90;
+ .timescale -9 -12;
+P_0xaaab658c7f20 .param/l "i" 1 3 26, +C4<011111>;
+S_0xaaab658c8000 .scope module, "u_divu_1iter" "divu_1iter" 3 27, 4 4 0, S_0xaaab658c7d70;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 32 "i_remainder";
+    .port_info 1 /INPUT 32 "i_dividend";
+    .port_info 2 /INPUT 32 "i_divisor";
+    .port_info 3 /INPUT 32 "i_quotient";
+    .port_info 4 /OUTPUT 32 "o_quotient";
+    .port_info 5 /OUTPUT 32 "o_remainder";
+    .port_info 6 /OUTPUT 1 "o_quotient_bit";
+    .port_info 7 /OUTPUT 32 "o_dividend";
+L_0xaaab658f5180 .functor BUFZ 1, L_0xaaab658f4fc0, C4<0>, C4<0>, C4<0>;
+L_0xaaab658f5970 .functor OR 32, L_0xaaab658f56e0, L_0xaaab658f5880, C4<00000000000000000000000000000000>, C4<00000000000000000000000000000000>;
+v0xaaab658c8300_0 .net *"_ivl_1", 30 0, L_0xaaab658f4cc0;  1 drivers
+v0xaaab658c8400_0 .net *"_ivl_16", 30 0, L_0xaaab658f53c0;  1 drivers
+L_0xffff59671a40 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c84e0_0 .net *"_ivl_18", 0 0, L_0xffff59671a40;  1 drivers
+v0xaaab658c85d0_0 .net *"_ivl_20", 31 0, L_0xaaab658f56e0;  1 drivers
+v0xaaab658c86b0_0 .net *"_ivl_22", 30 0, L_0xaaab658f5640;  1 drivers
+L_0xffff59671a88 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c87e0_0 .net *"_ivl_24", 0 0, L_0xffff59671a88;  1 drivers
+v0xaaab658c88c0_0 .net *"_ivl_26", 31 0, L_0xaaab658f5880;  1 drivers
+L_0xffff59671ad0 .functor BUFT 1, C4<0000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v0xaaab658c89a0_0 .net *"_ivl_29", 30 0, L_0xffff59671ad0;  1 drivers
+v0xaaab658c8a80_0 .net *"_ivl_3", 0 0, L_0xaaab658f4df0;  1 drivers
+v0xaaab658c8b60_0 .net "can_subtract", 0 0, L_0xaaab658f4fc0;  1 drivers
+v0xaaab658c8c20_0 .net "i_dividend", 31 0, L_0xaaab658f46c0;  alias, 1 drivers
+v0xaaab658c8ce0_0 .net "i_divisor", 31 0, o0xffff596bc228;  alias, 0 drivers
+o0xffff596c53d8 .functor BUFZ 32, C4<zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz>; HiZ drive
+v0xaaab658c8d80_0 .net "i_quotient", 31 0, o0xffff596c53d8;  0 drivers
+v0xaaab658c8e60_0 .net "i_remainder", 31 0, L_0xaaab658f44a0;  alias, 1 drivers
+v0xaaab658c8f50_0 .net "new_remainder", 31 0, L_0xaaab658f4f20;  1 drivers
+v0xaaab658c9010_0 .net "o_dividend", 31 0, L_0xaaab658f5460;  alias, 1 drivers
+v0xaaab658c90f0_0 .net "o_quotient", 31 0, L_0xaaab658f5970;  1 drivers
+v0xaaab658c92e0_0 .net "o_quotient_bit", 0 0, L_0xaaab658f5180;  1 drivers
+v0xaaab658c93a0_0 .net "o_remainder", 31 0, L_0xaaab658f51f0;  alias, 1 drivers
+v0xaaab658c9480_0 .net "subtracted_remainder", 31 0, L_0xaaab658f50e0;  1 drivers
+L_0xaaab658f4cc0 .part L_0xaaab658f44a0, 0, 31;
+L_0xaaab658f4df0 .part L_0xaaab658f46c0, 31, 1;
+L_0xaaab658f4f20 .concat [ 1 31 0 0], L_0xaaab658f4df0, L_0xaaab658f4cc0;
+L_0xaaab658f4fc0 .cmp/ge 32, L_0xaaab658f4f20, o0xffff596bc228;
+L_0xaaab658f50e0 .arith/sub 32, L_0xaaab658f4f20, o0xffff596bc228;
+L_0xaaab658f51f0 .functor MUXZ 32, L_0xaaab658f4f20, L_0xaaab658f50e0, L_0xaaab658f4fc0, C4<>;
+L_0xaaab658f53c0 .part L_0xaaab658f46c0, 0, 31;
+L_0xaaab658f5460 .concat [ 1 31 0 0], L_0xffff59671a40, L_0xaaab658f53c0;
+L_0xaaab658f5640 .part o0xffff596c53d8, 0, 31;
+L_0xaaab658f56e0 .concat [ 1 31 0 0], L_0xffff59671a88, L_0xaaab658f5640;
+L_0xaaab658f5880 .concat [ 1 31 0 0], L_0xaaab658f5180, L_0xffff59671ad0;
+# The file index is used to find the file name in the following table.
+:file_names 5;
+    "N/A";
+    "<interactive>";
+    "-";
+    "/home/vohoangnguyen/Documents/LAB_SOC/Lab1_Divider/divider_unsigned.v";
+    "/home/vohoangnguyen/Documents/LAB_SOC/Lab1_Divider/divu_1iter.v";

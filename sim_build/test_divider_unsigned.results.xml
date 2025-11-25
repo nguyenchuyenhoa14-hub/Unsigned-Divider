@@ -1,0 +1,10 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="12345" />
+    <testcase name="test_simple0" classname="testbench" file="/home/vohoangnguyen/Documents/LAB_SOC/Lab1_Divider/testbench.py" lineno="92" time="0.00037097930908203125" sim_time_ns="2.001" ratio_time="5393.831814910025" />
+    <testcase name="test_simple1" classname="testbench" file="/home/vohoangnguyen/Documents/LAB_SOC/Lab1_Divider/testbench.py" lineno="101" time="8.392333984375e-05" sim_time_ns="2.001" ratio_time="23843.188363636364" />
+    <testcase name="test_simple2" classname="testbench" file="/home/vohoangnguyen/Documents/LAB_SOC/Lab1_Divider/testbench.py" lineno="110" time="7.271766662597656e-05" sim_time_ns="2.0010000000000003" ratio_time="27517.384603278693" />
+    <testcase name="test_simple3" classname="testbench" file="/home/vohoangnguyen/Documents/LAB_SOC/Lab1_Divider/testbench.py" lineno="119" time="5.888938903808594e-05" sim_time_ns="2.0009999999999994" ratio_time="33978.95669635627" />
+    <testcase name="test_random1k" classname="testbench" file="/home/vohoangnguyen/Documents/LAB_SOC/Lab1_Divider/testbench.py" lineno="128" time="0.14196252822875977" sim_time_ns="2000.0010000000002" ratio_time="14088.231767591371" />
+  </testsuite>
+</testsuites>
