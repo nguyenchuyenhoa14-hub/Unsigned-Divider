@@ -33,6 +33,6 @@ module divu_1iter (
     //Shift left the dividend
     assign o_dividend = i_dividend <<1;
 
-    assign o_quotient = (i_quotient <<1) | o_quotient_bit;  
+    assign o_quotient = (i_quotient <<1) | {31'b0, o_quotient_bit};  
 
 endmodule
