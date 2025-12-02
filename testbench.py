@@ -29,7 +29,7 @@ def test_1iter(pytestconfig):
         hdl_toplevel=toplevel_module,
         includes=[PROJECT_PATH],
         build_dir="sim_build_1iter",
-        build_args=[],
+        build_args=["-CFLAGS", "-Wno-error"],
     )
 
     runr.test(
@@ -58,7 +58,7 @@ def test_divider(pytestconfig):
         hdl_toplevel=toplevel_module,
         includes=[PROJECT_PATH],
         build_dir=cu.SIM_BUILD_DIR,
-        build_args=[],
+        build_args=["-CFLAGS", "-Wno-error"],
     )
 
     runr.test(
